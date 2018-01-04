@@ -2,13 +2,13 @@
 title: LatinX in AI
 description: A landing page for LatinxinAI
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+ url: "www.latinxinai.org"
 
 # User settings
-username: QuickResolve
+username: LatinX in AI
 user_description: Admin
-user_title: Engineer
-email: anon@anon.com
+user_title: Coalition
+email: latinxinai@gmail.com
 twitter_username: lorem_ipsum
 github_username:  lorem_ipsum
 gplus_username:  lorem_ipsum
