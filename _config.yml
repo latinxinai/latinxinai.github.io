@@ -1,6 +1,6 @@
 # Site settings
-title: LatinX in AI
-description: A landing page for LatinxinAI
+title: "LatinX in AI"
+description: "A landing page for LatinxinAI"
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
  url: "www.latinxinai.org"
 
