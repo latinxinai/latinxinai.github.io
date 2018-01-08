@@ -11,3 +11,19 @@
 .tech img{ max-width: 300px; height: auto; } .img-circle{border-radius:50%;}
 .sponsors img{max-width: 400px; height: auto; display: block;
     margin: 0 auto;}
+
+.embed-doc{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-doc iframe {
+    position: absolute;
+    top:10px;
+    width: 68%;
+    height: 100%;
+    border: 0;
+}
