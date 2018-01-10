@@ -59,3 +59,18 @@
 .lead-details{
     text-align:center; 
 }
+
+#why-example{
+    margin:10px auto;
+    padding: 5px 4em 10px 4em;
+}
+
+#why-example p{
+    text-align:left;
+    padding: 5px 4em 0 4em;
+}
+
+#why-example img{
+    padding: 5px 4em 10px 4em;
+}
+
