@@ -47,6 +47,7 @@ div.desc {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 700px){
@@ -68,8 +69,32 @@ div.desc {
     clear: both;
 }
 
-.sponsors img{max-width: 400px; height: auto; display: block;
-    margin: 0 auto;}
+div.sponsors-gallery {
+    justify-content: center;
+    padding: 1.5em;
+}
+
+div.sponsors-gallery:hover {
+    opacity: 0.5;
+}
+
+div.sponsors-gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+
+.sponsors {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 
 .embed-doc{
     position: relative;
