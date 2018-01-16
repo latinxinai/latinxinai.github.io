@@ -8,7 +8,9 @@
 
 .directory-info{text-align:center;margin:5px auto} 
 
-.directory-info p{ text-align:center; max-width: 900px; margin:5px auto; text-align: justify;}
+.directory-info p{ text-align:center; max-width: 900px; margin:5px auto; 
+    text-align: justify;
+}
 
 .tech img{ max-width: 300px; height: auto; } 
 
@@ -101,13 +103,15 @@ div.sponsors-gallery img {
     padding-bottom: 56.25%;
     padding-top: 35px;
     height: 0;
+    justify-content: center;
     overflow: hidden;
 }
 
 .embed-doc iframe {
     position: absolute;
+    float: left;
     top:10px;
-    width: 68%;
+    width: 100%;
     height: 100%;
     border: 0;
 }
