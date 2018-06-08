@@ -160,3 +160,7 @@ div.sponsors-gallery img {
     padding: 5px 4em 10px 4em;
 }
 
+.join-buttons {
+    align-content: center;
+    text-align: center;
+}
