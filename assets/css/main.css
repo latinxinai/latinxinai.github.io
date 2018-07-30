@@ -167,3 +167,13 @@ div.sponsors-gallery img {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+#call-nips li{
+    color:black;
+    text-align: left;
+}
+
+#nips-org {
+    color:black;
+    text-align: left;
+}
