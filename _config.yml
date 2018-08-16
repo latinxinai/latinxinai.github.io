@@ -1,17 +1,17 @@
 # Site settings
 title: "LatinX in AI"
-description: "Creating Harmony Between AI and the Latinx Community"
+description: "Creating Harmony and Opportunity for Latinx in AI"
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 #url: "www.latinxinai.org"
 
 # User settings
 username: LatinX in AI
-user_description: Creating Harmony Between AI and the Latinx Community
+user_description: Creating Harmony and Opportunity for Latinx in AI
 user_title: Coalition
-email: latinxinai@gmail.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+email: latinxinai@accel.ai
+twitter_username: _LXAI
+github_username: latinxinai
+
 
 # Google-analytics
 google-analytics:
