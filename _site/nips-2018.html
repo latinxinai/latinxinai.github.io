@@ -20,7 +20,6 @@
 
   <body>
 
-
         <section id="about">
     <div class="nips-header" id="nipsHeader">
     <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
@@ -34,6 +33,23 @@
         <a href="#contact">Contact</a>
     </div>
 </div>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("nipsHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
     
  <div class="about-details" id="nipsIntro">
   <h2> Latinx in AI Coalition at NIPS 2018 </h2>
@@ -146,20 +162,7 @@
   </section>
 </div>
 
-<script>
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("nipsHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
 </section>
 
