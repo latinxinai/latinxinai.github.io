@@ -9,5 +9,5 @@ topic: Detecting neuropsychiatric conditions with semantic verbal fluency
 bio: I am interested in cognitively inspired natural language processing, working mainly in the detection of neuropsychological diseases and in language acquisition. Currently, MSc student at UFRGS, advised by Aline Villavicencio.
 website: https://twitter.com/FelipeSFPaula
 tags: oral
-featuredOrder: 
+featuredOrder: 6
 ---
