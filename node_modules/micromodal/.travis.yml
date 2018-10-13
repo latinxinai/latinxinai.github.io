@@ -1,0 +1,17 @@
+dist: trusty
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm install -g yarn
+  - yarn
+  - yarn dev &
+script:
+  - yarn test
+  - yarn bundlesize
+notifications:
+  email: false
