@@ -509,7 +509,7 @@ details {
 }
 
 #speakers .speakers-item .speakers-link .speakers-hover:hover {
-    opacity: .25;
+    opacity: .65;
     transform: scale(1.1);
 }
 

@@ -11,9 +11,10 @@
         {% assign featuredItems = site.tags.oral | sort: "featuredOrder" %} 
         {% for post in featuredItems %}
             <div class="cell speakers-item">
-                <a href="#{{ post.featuredOrder }}" class="speakers-link" data-toggle="modal">
+                <a href="{{post.website}}" target="_blank" class="speakers-link">
                     <div class="speakers-hover">
                         <div class="speakers-hover-content">
+                            <p>{{post.topic}}</p>
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
@@ -37,40 +38,39 @@
             </div>
         </div>
         <ul>
-            <li><a href='#'>Hugo Jair Escalante Balderas, Associate professor, INAOE</a></li>
-            <li><a href='#'>Fernando Alonso Delgado, PhD Student, Cornell University</a></li>
-            <li><a href='#'>Alejandra Márquez Herrera, MSc Student, San Pablo University(Arequipa-Perú)</a></li>
-            <li><a href='#'>Leonardo Cayo Leon Vera, Student, Universidad Nacional de Ingenieria</a></li>
-            <li><a href='#'>Paula Kintschev Santana de Moraes, MSc, University of São Paulo</a></li>
-            <li><a href='#'>Leissi Margarita Castaneda Leon, PhD student, University of Sao Paulo</a></li>
-            <li><a href='#'>Albert Manuel Orozco Camacho, BSc Student, UNAM</a></li>
-            <li><a href='#'>Diana Mabel Diaz Herrera, PhD Candidate, Wayne State University</a></li>
-            <li><a href='#'>Jorge Ortiz, Ph.D., Assistant Professor, Rutgers University</a></li>
-            <li><a href='#'>Pablo Fonseca, Visiting Researcher, MILA</a></li>
-            <li><a href='#'>Francisco Cruz, Universidad Central de Chile</a></li>
-            <li><a href='#'>Nils Murrugarra-Llerena, PhD Student</a></li>
-            <li><a href='#'>Mariano Phielipp. PhD., Senior Deep Learning Data Scientist at Intel AI Labs</a></li>
-            <li><a href='#'>Javier Andrés Orduz Ducuara, Professor at UNAM</a></li>
-            <li><a href='#'>Michael Melese Woldeyohannis, PhD Student and Faculty, Addis Ababa University</a></li>
-            <li><a href='#'>Wilbert Santos Pumacay Huallpa, Msc. Student</a></li>
-            <li><a href='#'>Diana Silvia Patiño Polar, Student, Universidad Católica San Pablo – Arequipa</a></li>
-            <li><a href='#'>Ximena Gutierrez-Vasques, PhD, UNAM</a></li>
-            <li><a href='#'>Andres Campero, PhD Student, MIT</a></li>
-            <li><a href='#'>Karol Baca-Lopez, PhD Student at Autonomous University of the State of Mexico</a></li>
-            <li><a href='#'>Marcell Llerena Paricahua, Student, Universidad Católica San Pablo – Arequipa</a></li>
-            <li><a href='#'>Dehua Chen, Msc, Federal University of Minas Gerais</a></li>
-            <li><a href='#'>José Luis Olivares Castillo, Student, UNAM</a></li>
-            <li><a href='#'>Rel Guzman Apaza, Research Assistant, Universidad Nacional de San Agustin</a></li>
-            <li><a href='#'>Romer Rosales, Director of Artificial Intelligence, LinkedIn</a></li>
-            <li><a href='#'>David Camilo Alvarez Charris, MSc, University of Edinburgh</a></li>
-            <li><a href='#'>Lisette Elizabeth Espín Noboa, PhD. Student at GESIS and University of Koblenz-Landau</a></li>
-            <li><a href='#'>Pablo Francisco Hernandez Leal, Researcher, Borealis AI</a></li>
-            <li><a href='#'>Verónica Vilaplana, Associate Professor, Technical University of Catalonia</a></li>
-            <li><a href='#'>Héctor Ricardo Murrieta Bello, Computational Engineering, Universidad Nacional Autónoma de México</a></li>
-            <li><a href='#'>Alfredo Alejandro De la Fuente Briceño, MSc, Skolkovo Institute of Science and Technology</a></li>
-            <li><a href='#'>Kevin Christian Rodríguez-Siu, Research and Teaching Assistant at Universidad Católica San Pablo in Arequipa-Perú</a></li>
-            <li><a href='#'>Sergio Martin del Campo Barraza, Ph.D., Post-doc, Luleå University of Technology, Sweden</a></li>
-            <li><a href='#'>Francisco Xavier Sumba Toral, Student, Concordia University</a></li>
+            <li>Hugo Jair Escalante Balderas, Associate professor, INAOE</li>
+            <li>Fernando Alonso Delgado, PhD Student, Cornell University</li>
+            <li>Alejandra Márquez Herrera, MSc Student, San Pablo University(Arequipa-Perú)</li>
+            <li>Leonardo Cayo Leon Vera, Student, Universidad Nacional de Ingenieria</li>
+            <li>Paula Kintschev Santana de Moraes, MSc, University of São Paulo</li>
+            <li>Leissi Margarita Castaneda Leon, PhD student, University of Sao Paulo</li>
+            <li>Albert Manuel Orozco Camacho, BSc Student, UNAM</li>
+            <li>Diana Mabel Diaz Herrera, PhD Candidate, Wayne State University</li>
+            <li>Jorge Ortiz, Ph.D., Assistant Professor, Rutgers University</li>
+            <li>Pablo Fonseca, Visiting Researcher, MILA</li>
+            <li>Francisco Cruz, Universidad Central de Chile</li>
+            <li>Nils Murrugarra-Llerena, PhD Student, University of Pittsburgh</li>
+            <li>Mariano Phielipp. PhD., Senior Deep Learning Data Scientist at Intel AI Labs</li>
+            <li>Javier Andrés Orduz Ducuara, Professor at UNAM</li>
+            <li>Wilbert Santos Pumacay Huallpa, Msc. Student</li>
+            <li>Diana Silvia Patiño Polar, Student, Universidad Católica San Pablo – Arequipa</li>
+            <li>Ximena Gutierrez-Vasques, PhD, UNAM</li>
+            <li>Andres Campero, PhD Student, MIT</li>
+            <li>Karol Baca-Lopez, PhD Student at Autonomous University of the State of Mexico</li>
+            <li>Marcell Llerena Paricahua, Student, Universidad Católica San Pablo – Arequipa</li>
+            <li>Dehua Chen, Msc, Federal University of Minas Gerais</li>
+            <li>José Luis Olivares Castillo, Student, UNAM</li>
+            <li>Rel Guzman Apaza, Research Assistant, Universidad Nacional de San Agustin</li>
+            <li>Romer Rosales, Director of Artificial Intelligence, LinkedIn</li>
+            <li>David Camilo Alvarez Charris, MSc, University of Edinburgh</li>
+            <li>Lisette Elizabeth Espín Noboa, PhD. Student at GESIS and University of Koblenz-Landau</li>
+            <li>Pablo Francisco Hernandez Leal, Researcher, Borealis AI</li>
+            <li>Verónica Vilaplana, Associate Professor, Technical University of Catalonia</li>
+            <li>Héctor Ricardo Murrieta Bello, Computational Engineering, Universidad Nacional Autónoma de México</li>
+            <li>Alfredo Alejandro De la Fuente Briceño, MSc, Skolkovo Institute of Science and Technology</li>
+            <li>Kevin Christian Rodríguez-Siu, Research and Teaching Assistant at Universidad Católica San Pablo in Arequipa-Perú</li>
+            <li>Sergio Martin del Campo Barraza, Ph.D., Post-doc, Luleå University of Technology, Sweden</li>
+            <li>Francisco Xavier Sumba Toral, Student, Concordia University</li>
             <!-- <li><a href='#'></a></li> -->
         </ul>
     </div>
