@@ -474,6 +474,44 @@ details {
   list-style-type: none;
 }
 
+.nipsSponsorGallery{
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.sponsorList{
+    min-width: 0;
+    margin: 5px;
+}
+
+#platLevel img{
+   max-width: 100%; 
+   max-height: 250px; 
+}
+
+#goldLevel img{
+    max-width: 100%; 
+    max-height: 200px; 
+ }
+
+ #silvLevel img{
+    max-width: 100%; 
+    max-height: 175px; 
+ }
+
+ #bronzLevel img{
+    max-width: 100%; 
+    max-height: 150px; 
+ }
+
+ #supportLevel img{
+    max-width: 100%; 
+    max-height: 100px; 
+ }
+
 @media screen and (max-width: 500px) {
   .nips-header a {
     float: none;
