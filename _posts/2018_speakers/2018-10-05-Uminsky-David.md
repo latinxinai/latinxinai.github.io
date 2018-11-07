@@ -1,6 +1,6 @@
 ---
 name: David Uminsky, Ph.D.
-title: Associate Professor, UCSF
+title: Associate Professor, USF
 modal-id: 1
 img: uminsky.jpg       
 thumbnail: uminsky.jpg
