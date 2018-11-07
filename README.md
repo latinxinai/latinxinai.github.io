@@ -1,66 +1,82 @@
-# latinxinai.github.io
+# LatinX in AI Coalition
 
-![](./particle.jpg)
+![](./assets/img/particle.jpg)
 
-This is a simple and minimalist site for Latinxinai.
+This is an opensource website for the LatinX in AI Coalition. Our organization is volunteer run, so we welcome and encourage contributions from our community and allies! 
 
-The Theme features:
+Familiarize yourself with the following documentation before getting started.
 
-- Feature 1 
-- Feature 2 
+## The Docs:
+
+- [Github Pages Hosting](https://pages.github.com/)
+- [Jekyll Site Generator](https://jekyllrb.com/)
+- [Particle Jekyll Theme](https://jekyll-themes.com/particle/)
+- [NodeJS](https://nodejs.org/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Yarn](https://yarnpkg.com/en/)
+- [Particle.js](https://github.com/VincentGarreau/particles.js/)
+- [Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#/provision)
+- [Open-Sourcee Style Guides](http://google.github.io/styleguide/)
 
 ## Basic Setup
 
-1. Step A
-2. Step B
-3. Step C
-4. Step D
+To contribute to this opensource website, complete the following steps:
 
-## Site and User Settings
+1. Clone this repository.
+    `git clone https://github.com/latinxinai/latinxinai.github.io.git`
+2. Change directories into cloned repository.
+    `cd latinxinai.github.io`
+2. Create your own branch.
+    `git checkout -b 'your-branch-name'`
+3. Install [Ruby](https://www.ruby-lang.org/en/downloads/) and [Jekyll](https://jekyllrb.com/docs/installation/) if you haven't already.
+4. Install [Node.js](https://nodejs.org/) and NPM is you haven't already.
+3. Install node packages 
+    `npm install`
 
-You have to fill some informations on `_config.yml` to customize your site.
 
-```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
+## Running Locally
 
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
+In order to compile the assets and run the latest version of the site locally complete the following:
 
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+- Pull latest version
+    `git pull origin master`
+- Run Jekyll Server
+    `jekyll serve`
+- Now browse to http://localhost:4000
 
-## Running the blog in local
+## Pushing Changes
 
-In order to compile the assets and run the site on local you need to follow those steps:
+Follow these **guidelines** when contributing to this site:
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install`
-- Run `gulp`
+- Always work off your own branch!
+- Never push to the master branch!!
+- Push to your branch and then [create a pull request](https://help.github.com/articles/creating-a-pull-request/).
+- Follow standard [open-source style guides](http://google.github.io/styleguide/).
+- Correct any suggested edits from LXAI and resubmit your pull request for additional review.
+- Once your changes have been accepted and merged to master by a representative of the LatinX in AI Coalition, your name may be added to the credits below. 
+
 
 ## Questions
 
-Having any issues file a [GitHub Issue](https://github.com/latinxinai/latinxinai.github.io/issues).										
+Having any issues with the site? See something that can be improved? 
+
+File a [GitHub Issue](https://github.com/latinxinai/latinxinai.github.io/issues).										
 
 ## License
 
-Is this required? (GNU General Public License v3.0)
+GNU General Public License v3.0
 
 ## Credits
 
 This theme was partially designed with the inspiration from these fine folks
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [Nathan Randecker](https://github.com/nrandecker/)
+
+This site has been modified by and built upon by the these folks
+- [Laura Montoya](https://github.com/quickresolve)
+- [Pablo Samuel Castro]()
+- [Yannet Interian]()
+- [Sebastian Anaya]()
+- [Victor Ramirez]()
+- 
