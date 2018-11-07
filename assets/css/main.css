@@ -203,6 +203,8 @@ div.sponsors-gallery img {
     text-align: left;
 }
 
+
+
 #nips-org {
     color:black;
     text-align: left;
@@ -404,6 +406,70 @@ details {
   
   /* NIPS */
 
+#nipsHeader{
+    display: inline-flex;
+    width: 100%;
+}
+
+#nipsHeader.logo{
+    display: inline-block;
+}
+
+
+.nips-header > .nav-btn {
+    display: none;
+  }
+
+  .nips-header > #nav-check {
+    display: none;
+  }
+
+  @media (max-width:600px) {
+    .nips-header > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nips-header > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      background-color: dodgerblue;
+    }
+    .nips-header > .nav-btn > label:hover {
+      background-color: rgb(87, 163, 240);
+    }
+    .nips-header > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nips-header > .nips-header-right {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nips-header > .nips-header-right > a {
+      display: block;
+      width: 100%;
+    }
+    .nips-header > #nav-check:not(:checked) + .nips-header-right {
+      height: 0px;
+    }
+    .nips-header > #nav-check:checked + .nips-header-right {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 
 .nips-header {
   overflow: hidden;
@@ -443,7 +509,19 @@ details {
 }
 
 .nips-header-right {
-  float: right;
+    display: inline;
+    float: right;
+
+}
+
+.nips-header-right a{
+    display: inline-block;
+
+}
+
+
+#nipsIntro{
+    overflow: hidden;
 }
 
 #nips-main{
@@ -473,6 +551,44 @@ details {
 #nipsProgram ul{
   list-style-type: none;
 }
+
+.nipsSponsorGallery{
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.sponsorList{
+    min-width: 0;
+    margin: 5px;
+}
+
+#platLevel img{
+   max-width: 100%; 
+   max-height: 250px; 
+}
+
+#goldLevel img{
+    max-width: 100%; 
+    max-height: 200px; 
+ }
+
+ #silvLevel img{
+    max-width: 100%; 
+    max-height: 175px; 
+ }
+
+ #bronzLevel img{
+    max-width: 100%; 
+    max-height: 150px; 
+ }
+
+ #supportLevel img{
+    max-width: 100%; 
+    max-height: 100px; 
+ }
 
 @media screen and (max-width: 500px) {
   .nips-header a {
