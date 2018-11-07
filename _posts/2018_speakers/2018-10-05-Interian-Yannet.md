@@ -1,6 +1,6 @@
 ---
 name: Yannet Interian, PhD
-title: Associate Professor, USFCA
+title: Associate Professor, USF
 modal-id: 1
 img: robot.png      
 alt: Picture of Yannet Interian

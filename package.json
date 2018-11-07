@@ -21,6 +21,7 @@
     "micromodal": "^0.3.2",
     "npm": "^5.8.0",
     "particles.js": "^2.0.0",
+    "sshpk": "^1.15.2",
     "sweet-scroll": "^3.0.1"
   }
 }
