@@ -16,7 +16,7 @@ Familiarize yourself with the following documentation before getting started.
 - [Yarn](https://yarnpkg.com/en/)
 - [Particle.js](https://github.com/VincentGarreau/particles.js/)
 - [Google Analytics](https://analytics.google.com/analytics/web/provision/?authuser=0#/provision)
-- [Open-Sourcee Style Guides](http://google.github.io/styleguide/)
+- [Open-Source Style Guides](http://google.github.io/styleguide/)
 
 ## Basic Setup
 
