@@ -5,7 +5,7 @@
     }
     
     .nips-schedule{
-      min-height: 2000px;
+      min-height: 2600px;
       height: auto;
     }
     
@@ -71,6 +71,11 @@
         font-size: .8em;
         color: dodgerblue;
         margin-left: 70px;
+    }
+
+    .event-info{
+      font-size:.8em;
+      margin-left: 50px;
     }
     
     

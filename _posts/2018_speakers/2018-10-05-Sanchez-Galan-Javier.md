@@ -1,5 +1,5 @@
 ---
-name: Javier Sanchez-Galan
+name: Javier Sanchez-Galan, PhD
 title: Research Scientist, UTP
 modal-id: 1
 img: sanchez-galan.png        
