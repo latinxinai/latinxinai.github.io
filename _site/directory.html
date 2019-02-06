@@ -36,7 +36,7 @@
   <body>
     <div class="header-alt" >
     <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
-    <div class="alt-header-right">
+    <div class="alt-header-right" id="alt-header">
         <a class="active" href="/">Home</a>
         <a href="/about">About</a>
         <a href="/directory">Directory</a>
@@ -46,8 +46,22 @@
         <a href="/neurips-2018">NeurIPS</a>
         <a href="/ecosystem">Ecosystem</a>
         <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
 </div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("alt-header");
+        if (x.className === "header-alt") {
+            x.className += " responsive";
+        } else {
+            x.className = "header-alt";
+        }
+    }
+</script>
 
       <section id="directory" class="dark-style">
     <div class="directory-info">
