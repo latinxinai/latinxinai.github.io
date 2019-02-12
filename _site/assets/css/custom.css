@@ -182,10 +182,11 @@ div.sponsors-gallery img {
 }
 
 .scholarship-guidelines img{
-  max-width: 500px;
-  max-height: 350px; 
+  max-width: 100%;
+  max-height: auto; 
   border-radius:100px;
   padding: 15px;
+  margin-right: 20px;
 }
 
 .scholarship-guidelines h5,body{
