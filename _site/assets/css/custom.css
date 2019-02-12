@@ -143,6 +143,65 @@ div.sponsors-gallery img {
     font-size: 1.2em;
 }
 
+.about-scholarship{
+  text-align:center;
+  margin:20px auto;
+}
+
+.about-scholarship p{
+  font-size: 1.2em;
+}
+
+.about-scholarship #goals{
+  text-align:left;
+  padding: 5px 4em 0 4em;
+  font-size: 1.2em;
+}
+
+.scholarshipGallery{
+  display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ flex-direction: column;
+ overflow: hidden;
+}
+
+.scholarshipList{
+  min-width: 0;
+  margin: 5px;
+}
+
+.scholarshipList img{
+  max-width: 100%; 
+  max-height: 150px; 
+}
+
+.scholarship-guidelines{
+  margin:20px 
+  auto
+}
+
+.scholarship-guidelines img{
+  max-width:100%;
+  height:auto;
+  border-radius:99px;
+  padding: 5px;
+}
+
+.scholarship-guidelines h5,body{
+  margin:0
+}
+
+.scholarship-guidelines li{
+  text-align:left;
+  font-size:1rem
+}
+
+.scholarship-guidelines p{
+  margin-right:5px
+  font-size:1.1rem
+}
+
 .dark-style{
     background:#1a222c;
     color:#ffff;
