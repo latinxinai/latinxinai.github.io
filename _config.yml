@@ -1,12 +1,12 @@
 # Site settings
 title: "LatinX in AI"
-description: "Creating Harmony and Opportunity for Latinx in AI"
+description: "Creating Opportunity for Latinx in AI"
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 #url: "www.latinxinai.org"
 
 # User settings
 username: LatinX in AI
-user_description: Creating Harmony and Opportunity for Latinx in AI
+user_description: Creating Opportunity for Latinx in AI
 user_title: Coalition
 email: latinxinai@accel.ai
 twitter_username: _LXAI
