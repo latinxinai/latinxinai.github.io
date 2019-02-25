@@ -18,6 +18,19 @@
     display: none;
   }
 
+  .workshop-intro{
+    text-align: center;
+    padding: 5px 4em 0 4em;
+    font-size: 1.2em;
+  } 
+
+  .workshop-intro img{
+    max-width: -webkit-fill-available;
+  }
+
+  #workshops-list:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
   @media (max-width:600px) {
     .workshop-header > .nav-btn {
       display: inline-block;
