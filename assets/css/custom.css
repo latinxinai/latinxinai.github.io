@@ -390,6 +390,7 @@ details {
 
   @media screen and (max-width: 600px) {
     .header-alt a:not(:first-child) {display: none;}
+    .header-alt .dropdown {display:none;}
     .header-alt a.icon {
       float: right;
       display: block;
@@ -409,6 +410,9 @@ details {
       display: block;
       text-align: left;
     }
+    .header-alt .dropdown{
+      display: block;
+    }
   }
 
 
@@ -418,11 +422,12 @@ details {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .dropdown-content {
