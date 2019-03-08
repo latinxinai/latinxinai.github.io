@@ -132,6 +132,8 @@ div.sponsors-gallery img {
     flex-wrap: wrap;
 }
 
+
+
 .about-details{
     text-align:center;
     margin:10px auto;
@@ -236,10 +238,22 @@ div.sponsors-gallery img {
 #why-example p{
     text-align:left;
     padding: 5px 4em 0 4em;
+    font-size: calc(.15em + 1vw)
 }
 
 #why-example img{
-    padding: 5px 4em 10px 4em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 10px;
+    
+}
+
+#why-example .user-projects{
+  padding: 2em .25em;
+  margin: 10px auto;
+}
+
+.photo-credits{
+  text-align:center;
 }
 
 .join-buttons {
