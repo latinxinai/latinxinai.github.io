@@ -1,0 +1,36 @@
+<div class="nips-header" id="icmlHeader">
+  <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
+  <div class="icml-header-right">
+    <a class="active" href="#workshop-intro">Introducción</a>
+    <a href="#workshop-main">Aplicaciones</a>
+    <!-- <a href="#icmlProgram">Programa</a> -->
+    <!-- <a href="#icmlSponsors">Patrocinadores</a> -->
+    <a href="#workshop-org">Organizadores</a>
+    <!-- <a href="#icmlLogistics">Logística</a> -->
+    <a href="#contact">Contacto</a>
+    <div class="dropdown" id='language'>
+      <a class="dropbtn">Idioma</a>
+        <div class="dropdown-content">
+          <a href="/icml-2019">English</a>
+          <a href="/icml-2019-es">Español</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("icmlHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
