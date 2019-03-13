@@ -1,0 +1,39 @@
+<div class="nips-header" id="icmlHeader">
+  <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
+  <div class="icml-header-right">
+    <a class="active" href="#workshop-intro">Intro</a>
+    <!-- <a href="https://latinx-in-ai-research-icml-2018.eventbrite.com">Register</a> -->
+    <a href="#workshop-main">Submissions</a>
+    <!-- <a href="#icmlProgram">Program</a> -->
+    <!-- <a href="#icmlSponsors">Sponsors</a> -->
+    <a href="#workshop-org">Organizers</a>
+    <!-- <a href="/neurips-2018-presenters">Presenters</a> -->
+    <!-- <a href="#icmlVolunteer">Volunteer</a> -->
+    <!-- <a href="#icmlLogistics">Logistics</a> -->
+    <a href="#contact">Contact</a>
+    <div class="dropdown" id='language'>
+      <a class="dropbtn">Language</a>
+        <div class="dropdown-content">
+          <a href="/icml-2019">English</a>
+          <a href="/icml-2019-es">Español</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("icmlHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+ </script>
