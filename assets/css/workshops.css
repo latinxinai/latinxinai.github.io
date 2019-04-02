@@ -442,12 +442,19 @@
 
 #speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content i {
     margin-top: -12px;
+    text-align: center;
 }
 
 #speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content h3,
 #speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content h4 {
     margin: 0;
+    text-align: center;
 }
+
+#speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content p {
+  text-align: center;
+}
+
 
 #speakers .speakers-item .speakers-caption {
     margin: 0 auto;
@@ -462,6 +469,7 @@
 #speakers .speakers-item .speakers-caption h4 {
     margin: 0;
     text-transform: none;
+    text-align: center;
 }
 
 
@@ -470,6 +478,7 @@
     font-family: {{ site.data.template.font.secondary }};
     font-size: 100%;
     font-style: italic;
+    text-align: center;
 }
 
 
