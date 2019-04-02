@@ -30,7 +30,7 @@
     session to discuss current research trends and career choices in artificial
     intelligence and machine learning. While all presenters will identify
     primarily as latinx, all are invited to attend.</p>
-    <h4>Creating Harmony and Opportunity for Latinx in AI</h4>
+    <h4>Creating Opportunity for Latinx in AI</h4>
     <div class="user-projects" id="call-workshop">
       <div class="images-right">
         <img alt="LXAI Logo" src="./assets/img/logo/LXAI-logo-black.png" />
@@ -157,8 +157,10 @@
         <a class="project-link" href="/icml-2019-schedule">Detailed Schedule</a>
     </div>
     -->
-    <!-- Speakers Grid Section -->
-    <section id="speakers" class="bg-light-gray">
+
+    <hr>
+    <!-- Keynote Grid Section -->
+    <section id="speakers" >
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-center">
@@ -167,7 +169,7 @@
               </div>
           </div>
           <div class="grid">
-          {% assign featuredItems = site.tags.keynote | sort: "featuredOrder" %} 
+          {% assign featuredItems = site.tags.keynote-icml2019 | sort: "featuredOrder" %} 
           {% for post in featuredItems %}
               <div class="cell speakers-item">
                   <a href="{{post.website}}" target="_blank" class="speakers-link">
