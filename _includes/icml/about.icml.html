@@ -90,26 +90,6 @@
       <a class="project-link" href="/icml-2019-apply">Submit Abstract</a>
     </div>
 
-    <!--
-    <hr>
-    <div id="workshopProgram">
-        <h2>Program</h2>
-        <h3>Highlights</h3>
-        <ul>
-          <li>7:30 - 8:00 am | Check-In </li>
-          <li>8:00 - 8:15 am | Opening Remarks</li>
-          <li>8:15 - 9:00 am | Keynote</li>
-          <li>9:00 - 11:00 am | Oral Presentations</li>
-          <li>11:00 - 12:00 pm | Research Proposal Mentoring Hour & Poster Sessions</li>
-          <li>12:00 - 1:00 pm | Lunch Break</li>
-          <li>1:00 - 2:00 pm | Poster Sessions</li>
-          <li>2:00 - 6:00 pm | Oral Presentations</li>
-          <li>6:30 -7:30 pm | Networking & Roundtable Discussion</li>
-        </ul>
-        <a class="project-link" href="/icml-2019-schedule">Detailed Schedule</a>
-    </div>
-    -->
-
     <hr>
     <div id="workshopSponsors">
       <h2>Sponsors</h2>
@@ -146,6 +126,59 @@
       <a class="project-link" href="/icml-2019-sponsor">Sponsor Prospectus</a>
       -->
     </div>
+
+    <!--
+    <hr>
+    <div id="workshopProgram">
+        <h2>Program</h2>
+        <h3>Highlights</h3>
+        <ul>
+          <li>7:30 - 8:00 am | Check-In </li>
+          <li>8:00 - 8:15 am | Opening Remarks</li>
+          <li>8:15 - 9:00 am | Keynote</li>
+          <li>9:00 - 11:00 am | Oral Presentations</li>
+          <li>11:00 - 12:00 pm | Research Proposal Mentoring Hour & Poster Sessions</li>
+          <li>12:00 - 1:00 pm | Lunch Break</li>
+          <li>1:00 - 2:00 pm | Poster Sessions</li>
+          <li>2:00 - 6:00 pm | Oral Presentations</li>
+          <li>6:30 -7:30 pm | Networking & Roundtable Discussion</li>
+        </ul>
+        <a class="project-link" href="/icml-2019-schedule">Detailed Schedule</a>
+    </div>
+    -->
+    <!-- Speakers Grid Section -->
+    <section id="speakers" class="bg-light-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Keynotes</h2>
+                  <h3 class="section-subheading text-muted"></h3>
+              </div>
+          </div>
+          <div class="grid">
+          {% assign featuredItems = site.tags.keynote | sort: "featuredOrder" %} 
+          {% for post in featuredItems %}
+              <div class="cell speakers-item">
+                  <a href="{{post.website}}" target="_blank" class="speakers-link">
+                      <div class="speakers-hover">
+                          <div class="speakers-hover-content">
+                              <p>{{post.topic}}</p>
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="/assets/img/ICML/2019/Speakers/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
+                  </a>
+                  <div class="speakers-caption">
+                      <h4>{{ post.name }}</h4>
+                      <p class="text-muted">{{ post.title }}</p>
+                  </div>
+              </div>
+          {% endfor %}
+          </div>
+      </div>
+    </section>
+
+  
 
     <hr>
     <div id="workshop-org">
