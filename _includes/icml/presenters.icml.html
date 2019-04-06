@@ -1,0 +1,86 @@
+<!-- Speakers Grid Section -->
+<section id="speakers" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Speakers</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="grid">
+      {% assign featuredItems = site.tags.oral-icml2019 | sort: "featuredOrder" %} 
+      {% for post in featuredItems %}
+      <div class="cell speakers-item">
+        <a href="{{post.website}}" target="_blank" class="speakers-link">
+          <div class="speakers-hover">
+            <div class="speakers-hover-content">
+              <p>{{post.topic}}</p>
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="/assets/img/icml/2019/presenters/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
+        </a>
+        <div class="speakers-caption">
+          <h4>{{ post.name }}</h4>
+          <p class="text-muted">{{ post.title }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Posters</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <ul>
+      <li><strong>Aaron J. Alvero</strong>, Stanford University Graduate School of Education: <em>Unsupervised Text Analysis in Applied Settings: A Case Study in Education</em></li>
+      <li><strong>Abel Torres Montoya</strong>, Dataveras: <em>Toward General Intelligence: The Role of Inhibition and Iteration</em></li>
+      <li><strong>Alejandra Marquez Herrera</strong>, Universidad Catolica San Pablo: <em>Improving Semantic Segmentation of 3D Medical Images on 3D Convolutional Neural Networks</em></li>
+      <li><strong>Alexander A. Ocsa</strong>, BlazingDB: <em>SQL for GPU Data Frames in RAPIDS AI: Accelerating end-to-end data science workflows using GPUs</em></li>
+      <li><strong>Ana Rocio Cardenas Maita</strong>, National University of Saint Anthony the Abbot in Cuzco: <em>A study of the application of computational intelligence and machine learning techniques in business process mining</em></li>
+      <li><strong>CJ Barberan</strong>, Rice University: <em>Transfer Learning Using Digital Colposcopy and Microendoscopy Images Collected in Rural Brazil</em></li>
+      <li><strong>Christian U. Carmona</strong>, University of Oxford: <em>Learning of Weighted Dynamic Multi-layer Networks via Latent Gaussian Processes</em></li>
+      <li><strong>Dennis H. Nunez Fernandez</strong>, National University of Engineering: <em>Hand Posture Recognition Using Convolutional Neural Network</em></li>
+      <li><strong>Débora Lina Nascimento Ciriaco Pereira</strong>, University of Sao Paulo: <em>Semantic Data Integration for Public Health in Brazil</em></li>
+      <li><strong>Edson Luque</strong>, University of Sao Paulo: <em>GAF-CNN-LSTM for Multivariate Time-Series Images Forecasting</em></li>
+      <li><strong>Eitel J. M. Lauria</strong>, Marist College: <em>Of Stacks and Muses: Adventures in Learning Analytics at Marist College</em></li>
+      <li><strong>Elian Raquel Laura Riveros</strong>, Universidad Nacional de San Agustin de Arequipa: <em>Automatic Gun Detection using Fast-RCNN on extreme illumination conditions</em></li>
+      <li><strong>Eric K. Tokuda</strong>, University of Sao Paulo: <em>Usage of street-level imagery for city-wide graffiti mapping</em></li>
+      <li><strong>Felipe A. Moreno-Vera</strong>, Universidad Catolica San Pablo: <em>Performing Deep Recurrent Double Q-Learning for Atari Games</em></li>
+      <li><strong>Flabio Gutierrez</strong>, Universidad Nacional de Piura: <em>Modeling and Prediction of El Niño in Piura Using Artifical Neural Networks</em></li>
+      <li><strong>Gladys Marleny Hilasaca</strong>, Dalhousie University: <em>User-guided Dimensionality Reduction Ensembles</em></li>
+      <li><strong>Hans Harley Bejar Ccacyahuillca</strong>, University of Sao Paulo: <em>Relative Fuzzy Connectedness on Directed Graphs and its Application in a Hybrid Method for Interactive Image Segmentation</em></li>
+      <li><strong>Hiram Ponce</strong>, Universidad Panamericana: <em>Challenges and Issues on Artificial Hydrocarbon Networks: The Chemical Nature of Data-Driven Approaches</em></li>
+      <li><strong>Jadisha Yarif Ramirez Cornejo</strong>, University of Campinas: <em>Recognition of Genetic Disorders Based on Deep Features and Geometric Representation</em></li>
+      <li><strong>Jeffri Murrugarra Llerena</strong>, National University of Trujillo: <em>A classic approach to detect potato diseases</em></li>
+      <li><strong>Johan Samir Obando Ceron</strong>, Universidad Autonoma de Occidente: <em>Probabilistic Perception System for Object Classification Based on Camera - LiDAR Sensor Fusion</em></li>
+      <li><strong>Johnny Torres</strong>, ESPOL University: <em>Deep Reinforcement Learning for Predicting Interest on Crisis-Related Twitter Conversations</em></li>
+      <li><strong>Jorge G. Madrid</strong>, National Institute of Astrophysics, Optics and Electronics: <em>Meta-learning of textual representations</em></li>
+      <li><strong>Jorge Luis Guevara Diaz</strong>, IBM Research: <em>An interpretable machine learning methodology for well data integration and sweet spotting identification</em></li>
+      <li><strong>Jose Lugo-Martinez</strong>, Carnegie Mellon University: <em>Classification in biological networks with hypergraphlet kernels</em></li>
+      <li><strong>Jose Lugo-Martinez</strong>, Carnegie Mellon University: <em>Dynamic interaction network inference from longitudinal microbiome data</em></li>
+      <li><strong>Joseph H. Murrugarra LLerena</strong>, University of Sao Paulo: <em>Understanding galaxy classification with deep learning</em></li>
+      <li><strong>Julissa G. Villanueva Llerena</strong>, University of Sao Paulo: <em>Global Sensitivity Analysis of MAP inference in Selective Sum-Product Networks</em></li>
+      <li><strong>Karol Baca-Lopez</strong>, Autonomous University of the State of Mexico: <em>Spatio-temporal air pollution modelling to predict environmental risk areas in Mexico City</em></li>
+      <li><strong>Leissi Margarita M. Castaneda Leon</strong>, University of Sao Paulo: <em>Extensions of a Hierarchical Graph Approach in Multi-Region Segmentation</em></li>
+      <li><strong>Lino A. Rodriguez Coayahuitl</strong>, National Institute of Astrophysics, Optics and Electronics: <em>Deep Genetic Programming</em></li>
+      <li><strong>Lucy Alsina Choque Mansilla</strong>, University of Sao Paulo: <em>Object Segmentation by Oriented Image Foresting Transform with Connectivity Constraints</em></li>
+      <li><strong>Miguel Alonso Jr.</strong>, Florida International University: <em>Work in Progress - Y-GAN: A Generative Adverserial Network for Depthmap Estimation from Multi-camera Stereo Images</em></li>
+      <li><strong>Nils Murrugarra-Llerena</strong>, University of Pittsburgh: <em>Asking Friendly Strangers: Non-Semantic Attribute Transfer</em></li>
+      <li><strong>Pablo Moriano</strong>, Indiana University: <em>Community-based anomalous event detection in temporal networks</em></li>
+      <li><strong>Pablo Rivas</strong>, Marist College: <em>ML-Based Feature Importance Estimation for Predicting Unethical Behaviour under Pressure</em></li>
+      <li><strong>Pedro Shiguihara</strong>, Universidad Peruana de Ciencias Aplicadas: <em>POS-tags features for Protein-Protein Interaction Extraction from Biomedical Articles</em></li>
+      <li><strong>Ramiro Casal</strong>, Universidad Nacional de Entre Rios: <em>Sleep/wake classification with pulse oximeter signals using recurrent neural networks</em></li>
+      <li><strong>Renato A. Castro</strong>, National University of Engineering: <em>Anti Spoofing Face Detection Technique based on Transfer Learning Convolutional Neural Networks and Real-Time Facial Landmark Detection</em></li>
+      <li><strong>Waldyn G. Martinez</strong>, Miami University: <em>Ensemble Pruning via Margin Maximization</em></li>
+      <li><strong>Wilbert Pumacay</strong>, Catholic University San Pablo: <em>Loco: A locomotion framework for DeepRL research</em></li>
+
+    </ul>
+  </div>
+</section>
+
