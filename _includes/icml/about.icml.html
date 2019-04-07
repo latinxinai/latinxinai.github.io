@@ -15,11 +15,9 @@
   </section>
 
   <section id="workshop-main">
-    <!--
     <h3>REGISTRATION OPEN</h3>
     <a class="project-link"
-        href="https://latinx-in-ai-research-icml-2019.eventbrite.com">JOIN US</a>
-    -->
+        href="https://lxai-icml2019.eventbrite.com/">JOIN US</a>
 
     <hr>
     <h2>Call for Participation</h2>
@@ -38,25 +36,26 @@
       <div class="contents">
         <h3>Important Dates</h3>
         <ul>
-          <li>March 22, 2019: <a href="/icml-2019-travel">Travel grant 
-                application</a> extended deadline</li>
-          <li>March 22, 2019: <a href="/icml-2019-apply">Abstract 
-                submission</a> extended deadline</li>
+          <li><del>March 22, 2019: <a href="/icml-2019-travel">Travel grant 
+                application</a> extended deadline</del></li>
+          <li><del>March 22, 2019: <a href="/icml-2019-apply">Abstract 
+                submission</a> extended deadline</del></li>
           <li><del>March 11, 2019: <a href="/icml-2019-committee">Program 
                 Committee application</a> deadline</del></li>
-          <li>March 29, 2019: Abstract Review deadline</li>
-          <li>April 1, 2019: Notification of submission acceptance</li>
-          <li>April 10, 2019: <a 
+          <li><del>March 29, 2019: Abstract Review deadline</del></li>
+          <li><del>April 1, 2019: Notification of submission acceptance</del></li>
+          <li>April 11, 2019: <a 
               href="https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html">
               Visa application</a> deadline</li>
-          <li>May 1, 2019: ICML registration opens at 8am</li>
-          <li>June 14, 2019: LXAI Workshop</li>
+          <li>Mach 12, 2019: ICML registration opens at 8am</li>
+          <li>June 10, 2019: LXAI Workshop</li>
         </ul>
         <a class="project-link" href="/icml-2019-travel">Travel Grant 
             Application</a>
       </div>
     </div>
     
+    <!--
     <div>
       <h2>Submission Instructions</h2>
       <p>We strongly encourage students, post-docs and researchers who
@@ -89,6 +88,7 @@
       submissions.</p>
       <a class="project-link" href="/icml-2019-apply">Submit Abstract</a>
     </div>
+    -->
 
     <hr>
     <div id="workshopSponsors">
@@ -102,31 +102,36 @@
 
       
       <div class='icmlSponsorGallery'>
-        <!--
         <div class='sponsorList' id='platLevel'>
           <h3>Platinum</h3>
-            <a target="_blank" href="https://ai.google/"><img src="./assets/img/ICML/Sponsors/Google_logo.png"></a>
+            <a target="_blank" href="https://www.capitalone.com"><img width=640
+              src="./assets/img/icml/2019/sponsors/Platinum-Capital-One.png"></a>
+            </br>
+            <a target="_blank" href="https://www.facebook.com"><img width=500
+              src="./assets/img/icml/2019/sponsors/Platinum-Facebook.png"></a>
+            </br>
+            <a target="_blank" href="https://www.microsoft.com"><img width=700
+              src="./assets/img/icml/2019/sponsors/Platinum-Microsoft.png"></a>
         </div>
-        -->
+        
         <div class='sponsorList' id='goldLevel'>
           <h3>Gold</h3>
-            <a target="_blank" href="https://ai.google/"><img
+            <a target="_blank" href="https://ai.google/"><img width=320
               src="./assets/img/icml/2019/sponsors/Gold-Google.png"></a>
 
         </div>
 
-        <!--
         <div class='sponsorList' id='silvLevel'>
           <h3>Silver</h3>
-              <a target="_blank" href="https://deepmind.com/"><img src="./assets/img/ICML/Sponsors/DeepMind_logo.png"></a>
-              <a target="_blank" href="https://www.capitalone.com/"><img src="./assets/img/ICML/Sponsors/Capital_One_logo.png"></a>
+              <a target="_blank" href="https://www.apple.com/"><img width=240
+                src="./assets/img/icml/2019/sponsors/Silver-Apple.png"></a>
         </div>
 
+        <!--
         <div class='sponsorList' id='bronzLevel'>
           <h3>Bronze</h3>
               <img src="./assets/img/ICML/Sponsors/Nvidia_logo.png">
               <img src="./assets/img/ICML/Sponsors/intel_logo.png">
-              <img src="./assets/img/ICML/Sponsors/facebook_logo.png">
         </div>
 
         <div class='sponsorList' id='supportLevel'>
@@ -158,36 +163,36 @@
     </div>
     -->
 
-    <hr>
+    <br/><hr>
     <!-- Keynote Grid Section -->
     <section id="speakers" >
       <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Keynotes</h2>
-                  <h3 class="section-subheading text-muted"></h3>
-              </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Keynote Speakers</h2>
+            <h3 class="section-subheading text-muted"></h3>
           </div>
-          <div class="grid">
+        </div>
+        <div class="grid">
           {% assign featuredItems = site.tags.keynote-icml2019 | sort: "featuredOrder" %} 
           {% for post in featuredItems %}
-              <div class="cell speakers-item">
-                  <a href="{{post.website}}" target="_blank" class="speakers-link">
-                      <div class="speakers-hover">
-                          <div class="speakers-hover-content">
-                              <p>{{post.topic}}</p>
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="/assets/img/icml/2019/presenters/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
-                  </a>
-                  <div class="speakers-caption">
-                      <h4>{{ post.name }}</h4>
-                      <p class="text-muted">{{ post.title }}</p>
-                  </div>
+          <div class="cell speakers-item">
+            <a href="{{post.website}}" target="_blank" class="speakers-link">
+              <div class="speakers-hover">
+                <div class="speakers-hover-content">
+                  <p>{{post.topic}}</p>
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
               </div>
-          {% endfor %}
+              <img src="/assets/img/icml/2019/presenters/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
+            </a>
+            <div class="speakers-caption">
+              <h4>{{ post.name }}</h4>
+              <p class="text-muted">{{ post.title }}</p>
+            </div>
           </div>
+          {% endfor %}
+        </div>
       </div>
     </section>
 
@@ -270,12 +275,12 @@
     </div>
 
     
-    <div id="workshpVolunteer">
+    <div id="workshopVolunteer">
       <hr>
       <h3>Volunteers Appreciated</h3>
       <p>Interested in volunteering with LatinX in AI during the event? Please
-      complete the volunteer signup form: <a
-        href="#">Coming Soon</a></p>
+      complete the volunteer signup form <a
+        href="https://forms.gle/LCfW3YCmCacMG1cW9">here.</a></p>
       <hr>
     </div>
    
