@@ -429,6 +429,10 @@
     transform: scale(1.1);
 }
 
+.speaker-img {
+  max-height: 300px;
+}
+
 #speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content {
     position: absolute;
     top: 50%;
@@ -454,6 +458,7 @@
 #speakers .speakers-item .speakers-link .speakers-hover .speakers-hover-content p {
   text-align: center;
 }
+
 
 
 #speakers .speakers-item .speakers-caption {
