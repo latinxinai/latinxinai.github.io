@@ -35,12 +35,20 @@
 </script>
   <body>
     <section id="about">
-  <div class="nips-header" id="icmlHeader">
+  <div class="workshop-header" id="workshopHeader">
   <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
-  <div class="icml-header-right">
+  <div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+    <span></span>
+    <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="workshop-header-right">
     <a class="active" href="#workshop-intro">Introducción</a>
     <a href="https://translate.google.com/translate?sl=en&tl=es&u=https%3A%2F%2Flxai-icml2019.eventbrite.com%2F">Registro</a> 
-    <a href="#workshop-main">Aplicaciones</a>
+    <!-- <a href="#workshop-main">Aplicaciones</a> -->
     <!-- <a href="#icmlProgram">Programa</a> -->
     <a href="#workshopSponsors">Patrocinadores</a>
     <a href="#workshop-org">Organizadores</a>
@@ -63,7 +71,7 @@
 <script>
   window.onscroll = function() {myFunction()};
   
-  var header = document.getElementById("icmlHeader");
+  var header = document.getElementById("workshopHeader");
   var sticky = header.offsetTop;
   
   function myFunction() {
@@ -240,8 +248,11 @@
 
         <div class='sponsorList' id='silvLevel'>
           <h3>Plata</h3>
-              <a target="_blank" href="https://www.apple.com/"><img width=100
+              <a target="_blank" href="https://www.apple.com/"><img width=80
                 src="./assets/img/icml/2019/sponsors/Silver-Apple.png"></a>
+              <br/>
+              <a target="_blank" href="https://deepmind.com/"><img width=300
+                src="./assets/img/icml/2019/sponsors/Silver-DeepMind.png"></a>
         </div>
         <!--
         <div class='sponsorList' id='bronzLevel'>
@@ -317,6 +328,22 @@
             <div class="speakers-caption">
               <h4>Katia Canepa Vega</h4>
               <p class="text-muted">Assistant Professor, UC Davis</p>
+            </div>
+          </div>
+          
+          <div class="cell speakers-item">
+            <a href="https://www.linkedin.com/in/david-castillo-200ab710/" target="_blank" class="speakers-link">
+              <div class="speakers-hover">
+                <div class="speakers-hover-content">
+                  <p>Lunch Speaker</p>
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="/assets/img/icml/2019/presenters/castillo.jpg" class="responsive-image img-centered desaturate" alt="">
+            </a>
+            <div class="speakers-caption">
+              <h4>David Castillo</h4>
+              <p class="text-muted">Managing Vice President of Machine Learning, Capital One</p>
             </div>
           </div>
           
