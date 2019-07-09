@@ -1,0 +1,162 @@
+<h2 style="text-align:center">LXAI Gallery</h2>
+
+<div class="slideContainer">
+  <div class="mySlides">
+    <div class="numbertext">1 / 14</div>
+    <img src="/assets/img/gallery/workshop-group.png" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 14</div>
+    <img src="/assets/img/gallery/lxai-openai.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 14</div>
+    <img src="/assets/img/gallery/lxai-bai-iclr.png" style="width:75%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 14</div>
+    <img src="/assets/img/gallery/workshop-colombian.png" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 14</div>
+    <img src="/assets/img/gallery/aiff.jpg" style="width:75%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 14</div>
+    <img src="/assets/img/gallery/workshop-leads.png" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 14</div>
+    <img src="/assets/img/gallery/aiff2.png" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 14</div>
+    <img src="/assets/img/gallery/neurips.png" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 14</div>
+    <img src="/assets/img/gallery/neurips2.png" style="width:75%">
+ </div>
+
+ <div class="mySlides">
+    <div class="numbertext">10 / 14</div>
+    <img src="/assets/img/gallery/lxai-icml.png" style="width:75%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">11 / 14</div>
+    <img src="/assets/img/gallery/gtc.png" style="width:75%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">12 / 14</div>
+    <img src="/assets/img/gallery/lxai-icml2.png" style="width:75%">
+</div>
+
+
+<div class="mySlides">
+    <div class="numbertext">13 / 14</div>
+    <img src="/assets/img/gallery/lxai-icml3.png" style="width:50%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">14 / 14</div>
+    <img src="/assets/img/gallery/lxai.jpeg" style="width:75%">
+</div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/workshop-group.png" style="width:100%" onclick="currentSlide(1)" alt="LXAI Research Workshops">
+    </div>
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/lxai-openai.jpg" style="width:100%" onclick="currentSlide(2)" alt="LXAI @ OpenAI">
+    </div>
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/lxai-bai-iclr.png" style="width:100%" onclick="currentSlide(3)" alt="LXAI + BAI @ ICLR 2019">
+    </div>
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/workshop-colombian.png" style="width:100%" onclick="currentSlide(4)" alt="Colombians at LXAI Workshop">
+    </div>
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/aiff.jpg" style="width:100%" onclick="currentSlide(5)" alt="LXAI + Latinos in Finance host AI Fintech Forum">
+    </div>    
+    <div class="slideColumn">
+      <img class="demo cursor" src="/assets/img/gallery/workshop-leads.png" style="width:100%" onclick="currentSlide(6)" alt="LXAI Workshop Chairs">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/aiff2.png" style="width:100%" onclick="currentSlide(7)" alt="LXAI @ AI Fintech Forum 2018">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/neurips.png" style="width:100%" onclick="currentSlide(8)" alt="LXAI @ NeurIPS 2018">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/neurips2.png" style="width:100%" onclick="currentSlide(9)" alt="LXAI @ NeurIPS 2018">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/lxai-icml.png" style="width:100%" onclick="currentSlide(10)" alt="LXAI @ ICML 2019">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/gtc.png" style="width:100%" onclick="currentSlide(11)" alt="LXAI @ GTC 2019">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/lxai-icml2.png" style="width:100%" onclick="currentSlide(12)" alt="LXAI @ ICML 2019">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/lxai-icml3.png" style="width:100%" onclick="currentSlide(13)" alt="LXAI Town Hall">
+    </div>
+    <div class="slideColumn">
+        <img class="demo cursor" src="/assets/img/gallery/lxai.jpeg" style="width:100%" onclick="currentSlide(14)" alt="LatinX in AI">
+    </div>
+
+ 
+
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
