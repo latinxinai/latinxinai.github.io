@@ -1,4 +1,81 @@
- <div class="about-details" id="nipsIntro">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LXAI en NeurIPS</title>
+  <meta name="description" content="Creating Opportunity for Latinx in AI">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/assets/css/micromodal.css">
+  <link rel="stylesheet" href="/assets/css/schedule.css">
+  <link rel="stylesheet" href="/assets/css/slide-show.css">
+  <link rel="stylesheet" href="/assets/css/workshops.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+</head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <body>
+
+        <section id="about">
+    <div class="nips-header" id="nipsHeader">
+    <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
+    <div class="nips-header-right">
+        <a class="active" href="#nipsIntro">Introducción</a>
+        <a href="#nips-main">Aplicaciones</a>
+        <a href="#nipsProgram">Programa</a>
+        <a href="#nipsSponsors">Patrocinadores</a>
+        <a href="#nips-org">Organizadores</a>
+        <a href="#nipsLogistics">Logística</a>
+        <a href="#contact">Contacto</a>
+        <div class="dropdown" id='language'>
+          <a class="dropbtn">Idioma</a>
+            <div class="dropdown-content">
+                <a href="/neurips-2019">English</a>
+                <a href="/neurips-2019-es">Español</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("nipsHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+    
+  <div class="about-details" id="nipsIntro">
   <h2> Coalición LatinX en IA en NIPS 2019 </h2>
   <section id="goals" style="text-align: center;">
     <p>El segundo workshop oficial de LatinX en IA está co-localizado con <a href="https://nips.cc/">NIPS</a> en el <a href="https://congresmtl.com/">Vancouver, Canada</a> el lunes, 9 de diciembre, 2019.</p>
@@ -16,10 +93,10 @@
         <div class="contents">
           <h3>Fechas Importantes</h3>
             <ul>
-               <li>13 de Septiembre, 2019: <a href="https://cmt3.research.microsoft.com/LXAINeurlPS2019">Fecha límite para enviar el resumen tecnico (abstract)</a></li>
+               <li>13 de Septiembre, 2019: <a href="https://cmt3.research.microsoft.com/LXAINeurLPS2019">Fecha límite para enviar el resumen tecnico (abstract)</a></li>
               <li>3 de octubre, 2019: <a href="/nips-2019-travel-es">Fecha límite para solicitar becas de viaje</a></li>
               
-              <li>9 de septiembre, 2019: <a href="https://forms.gle/orfBj15ehMyAgPyJA">Fecha límite para solicitar membresía al Comité de Programación</a></li>
+              <li>9 de septiembre, 2019: <a href="/nips-2019-committee-es">Fecha límite para solicitar membresía al Comité de Programación</a></li>
               <li>30 de septiembre, 2019: Notificación de aceptación</li>
               <li>24 de octubre, 2019: Fecha límite para registro anticipado en NIPS</li>
               <li>9 de diciembre, 2019: Workshop LatinX en IA</li>
@@ -29,17 +106,16 @@
         </div>
       </div>
       <div>
-	<h2>Instrucciones de envio</h2>
+        <h2>Instrucciones de envio</h2>
         <p>Recomendamos a estudiantes, post-docs e investigadores en todas las áreas de inteligencia artificial que se identifican primordialmente como LatinX a presentar un resumen técnico mencionando publicaciones nuevas, previas, o que están siendo revisadas. Invitamos a los autores a que envíen resúmenes en las áreas de teoría, metodología, así como sus aplicaciones. Los resúmenes pueden referirse a trabajos terminados o en progreso. Dado que no es necesario que el primer autor sea quien presente el trabajo, recomendamos a los autores que resalten la contribución de las personas LatinX en el resúmen, especialmente en el caso que sean ellos quienes presenten el trabajo.</p>
         <p>En general, los trabajos aceptados serán presentados en una sesión de pósters. Habrá un número reducido de trabajos que serán seleccionados para que sus autores hagan una presentación oral de 15 minutos. Las propuestas serán revisadas por voluntarios de la comunidad. Invitamos a que los autores participen como voluntarios para revisar las propuestas para LatinX en IA, indicándolo así durante el proceso de envío de sus resúmenes.</p>
 
-        <h2>Guia de envios</h2>
-        <p>Todos los articulos enviados seran sometidos a una revision doble sin nombre de autor. Las presentaciones pueden tener hasta dos páginas, incluidas todas las figuras y tablas, con una página adicional para las referencias enviadas como un enlace a un PDF, siguiendo el <a href="https://nips.cc/Conferences/2019/PaperInformation/StyleFiles"> estilo estandard </a> de la conferencia. Las presentaciones deben estar en una sola columna. Deben estar compuestas por tipos de letra de 11 puntos y deben tener al menos un margen de 1 pulgada alrededor. Las presentaciones que no sigan estas pautas corren el riesgo de ser rechazadas sin consideración de sus méritos. Las presentaciones deben indicar el problema de investigación, la motivación y la contribución técnica. Las presentaciones deben ser independientes e incluir todas las figuras, tablas y referencias.</p>
+        <h3>Guia de envio</h3>
+        <p>Las presentaciones pueden tener hasta dos páginas, incluidas todas las figuras y tablas, con una página adicional para las referencias enviadas como un enlace a un PDF. Las presentaciones deben estar en una sola columna. Deben estar compuestas por tipos de letra de 11 puntos y deben tener al menos un margen de 1 pulgada alrededor. Las presentaciones que no sigan estas pautas corren el riesgo de ser rechazadas sin consideración de sus méritos. Las presentaciones deben indicar el problema de investigación, la motivación y la contribución técnica. Las presentaciones deben ser independientes e incluir todas las figuras, tablas y referencias.</p>
         <p>El plazo para enviar el resumen tecnico finaliza a las 11:59 p.m. EST, el 13 de septiembre de 2019. Tenga en cuenta que no se ofrecerán extensiones para las presentaciones.</p>
 
-        <a class="project-link" href="https://cmt3.research.microsoft.com/LXAINeurlPS2019">Envio del Resumen Tecnico</a>
+	<a class="project-link" href="/nips-2019-apply-es">Envio de resumen (abstract)</a>
 
-	  
       </div>
       <!-- hr -->
       <!-- div id="nipsProgram">
@@ -93,20 +169,9 @@
             <li>Javier Andres Orduz Ducuara, Doctor en Ciencias, National Autonomous University of Mexico</li>
 
           </ul>
-          <a class="project-link" href="https://forms.gle/orfBj15ehMyAgPyJA">Unirse al Comité</a>
+          <a class="project-link" href="/nips-2019-committee-es">Unirse al Comité</a>
       </div>
       <hr>
-	<div id="nipsVolunteer">
-        	<hr>
-        	<h3>Voluntarios</h3>
-        	<p>Si estas interesado en trabajar de voluntario en LXAI, por favor rellene el siguiente formulario: 
-
-			       <a href="https://docs.google.com/forms/d/1RVx0LM_t0W0xz2cagq-DOb2sSlAjfsjHxITRgmaQwDI/edit?usp=sharing">
-				     Voluntarios
-			       </a>
-		      </p>
-        	</hr>
-        </div>
       <div id="nipsLogistics">
         <h3>Logística</h3>
         <details>
@@ -145,3 +210,37 @@
     </center>
 </div>
 
+      <footer class="footer">
+    <div id="mc_embed_signup" style="background-color: transparent;">
+        <form action="https://latinxinai.us18.list-manage.com/subscribe/post?u=b8f9b1634c3e8f31a837653bc&amp;id=ab4bcc65e0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Subscríbete a nuestra lista de correos</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="correo electrónico" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b8f9b1634c3e8f31a837653bc_ab4bcc65e0" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+    <p>&copy; LatinXinAI</p>
+    <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/latinxinai">LatinX in AI</a></p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/custom.js"></script>
+<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b8f9b1634c3e8f31a837653bc","lid":"ab4bcc65e0"}) })</script> -->
+<!-- Google Analytics -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-16144168-4', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  </body>
