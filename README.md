@@ -44,6 +44,48 @@ In order to compile the assets and run the latest version of the site locally co
     `jekyll serve`
 - Now browse to http://localhost:4000
 
+
+## File Structure
+This site follows the general structure of a [jekyll](https://jekyllrb.com/docs/structure/) github pages site.
+
+For changes to workshop pages, please only edit the following:
+1. [_pages](/_pages/)
+    - There should be a separate workshop site directory for each conference we colocate with identified by the acronym and year, ex: XXXX_YYYY
+    - Each workshop site directory should contain at minimum the following pages
+        - home page
+        - sponsor page
+        - schedule page
+        - presenter page
+    - Each of these pages should include the corresponding nav and footer files
+    - Duplicate of each page should be made available in Spanish and Portugese if possible
+    - Use previous years workshops as a template for creating new pages
+
+2. [_includes](/_includes/)
+    - Directories organized by conference acronym then year of conference, ex: XXXX/YYYY/
+    - This is where the content for all pages will be created and modified
+    - At minimum there should be created and maintained the following includes files:
+        - about 
+            - contains the information displayed on the homepage of the workshop website
+        - header
+            - navbar on the homepage of the workshop website
+        - header alt
+            - navbar on all alternative pages of the workshop website
+        - presenters
+            - lists the selected presenters with additional information
+        - schedule
+            - lists the final schedule of the day
+        - sponsor
+            -  sponsorship deck with levels, etc
+
+3. [_posts](/_posts/)
+    - This directory is where the data for each presenter is stored
+    - keep organized by year and conference we are colocating with, ex: YYYY_XXXX_speakers
+    - Use previous years as a template for creating new presenter data files
+
+
+**All the code is compiled into the _site directory and served during build by jekyll from the master branch. If you make manual changes to code in the _site directory they will be overwritten automatically.**
+
+
 ## Pushing Changes
 
 Follow these **guidelines** when contributing to this site:
@@ -75,9 +117,10 @@ This theme was partially designed with the inspiration from these fine folks
 
 This site has been modified by and built upon by the these folks
 - [Laura Montoya](https://github.com/quickresolve)
-- [Pablo Samuel Castro]()
-- [Yannet Interian]()
-- [Sebastian Anaya]()
-- [Victor Ramirez]()
+- [Pablo Samuel Castro](https://github.com/psc-g)
+- [Yannet Interian](https://github.com/yanneta)
+- [Sebastian Anaya](https://github.com/seby408)
+- [Victor Ramirez](https://github.com/vhr1975)
 - [Pablo Rivas](https://github.com/pablorp80)
-- 
+- [Maria Pantoja](https://github.com/mpantoja314)
+- [Juan Camilo](https://github.com/juancamilog)
