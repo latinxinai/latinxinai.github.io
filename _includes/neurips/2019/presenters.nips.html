@@ -1,0 +1,146 @@
+<!-- Speakers Grid Section -->
+<section id="speakers" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Speakers</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="grid">
+        {% assign featuredItems = site.tags.oral | sort: "featuredOrder" %} 
+        {% for post in featuredItems %}
+            <div class="cell speakers-item">
+                <a href="{{post.website}}" target="_blank" class="speakers-link">
+                    <div class="speakers-hover">
+                        <div class="speakers-hover-content">
+                            <p>{{post.topic}}</p>
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/assets/img/NIPS/Speakers/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
+                </a>
+                <div class="speakers-caption">
+                    <h4>{{ post.name }}</h4>
+                    <p class="text-muted">{{ post.title }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Posters</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <ul>
+            	<li>Development of a hand pose recognition system on an embedded computer using CNNs	Dennis H Núñez Fernández (Universidad Nacional de Ingeniería)*</li>
+		<li>Improving Hate Speech Classification on Twitter	Susana Benavidez (Stanford University)*; Andy Lapastora (Stanford University)</li>
+		<li>Energy Optimization of Wireless Sensor Network Using Neuro-Fuzzy Algorithms	Mohammed Ali Mr. Adem (Bahirdar University)*</li>
+		<li>Music video classification using audio and visual features	Mikiyas Gulema Tefera (Bahir Dar Univerity)*</li>
+		<li>Autonomously Reusing Knowledge in Multiagent Reinforcement Learning	Felipe Leno da Silva (University of Sao Paulo)*; Matthew Taylor (Borealis AI); Anna Helena Reali Costa (University of São Paulo)</li>
+		<li>Road Damage Acquisition System based on RetinaNet for Physical Asset Management	Gilberto Ochoa-Ruiz (Tec de Monterrey)*; Andres Alonso Angulo-Murillo (Universidad Autonoma de Guadalajara)</li>
+		<li>Emotion recognition using Texture Maps and Convolutional Neural Networks	Lourdes Ramírez Cerna (National University of Trujillo)*; Edwin J Escobedo Cardenas (Federal University of Ouro Preto)</li>
+		<li>DiPol-GAN: Generating Molecular Graphs Adversarially with Relational Differentiable Pooling	Pablo Rivas (Marist College)*; Michael Guarino (Marist College); Alexander Shah (Marist College)</li>
+		<li>Prediction of gaze direction using Convolutional Neural Networks for Autism diagnosis	Dennis H Núñez Fernández (Universidad Peruana Cayetano Heredia)*</li>
+		<li>An ontology and frequency-based approach, with machine learning, to recommend activities in scientific workflows	Adilson L Khouri (USP)*</li>
+		<li>Neural Network Autoencoders for Compressed Neuroevolution	Santiago Miret (Intel AI Lab)*; Somdeb Majumdar (Intel AI Lab)</li>
+		<li>Weak supervision for electronic phenotyping using electronic health records	Juan M Banda (Georgia State University)*; Nigam Shah (Stanford)</li>
+		<li>Object Segmentation by Oriented Image Foresting Transform with Connectivity Constraints	Lucy Alsina Choque Mansilla (University of São Paulo)*</li>
+		<li>Advanced Transfer Learning Approach for Improving Sentiment Analysis on Different Dialects of Spanish	Daniel Alfredo Palomino Paucar (National University of Engineering)*; Daniel Palomino (Universidad Católica San Pablo); José Eduardo Ochoa Luna (San Pablo Catholic University)</li>
+		<li>Deep learning models for diabetic retinophaty screening program	Abraham Sanchez (Gobierno de Jalisco)*; Eduardo Ulises Moya (Gobierno de Jalisco); Raul Nanclares (Gobierno de Jalisco); Alexander Quevedo (Gobierno de Jalisco); Jorge Martinez (Gobierno de Jalisco); Gaspar Gonzalez (Cinvestav Guadalajara)</li>
+		<li>Learning Bandpass and Common Spatial Pattern Filters for Motor Imagery Classification	Paul Augusto Bustios Belizario (University of Sao Paulo)*; João Luís Garcia Rosa (University of São Paulo, Brazil)</li>
+		<li>Transfer Learning applied to Reinforcement Learning problem with continuous state space using Human-like recall/association	Luis A Avendaño Muñoz (Universidad de los Andes)*; Fernando E. Lozano (Universidad de los Andes, Colombia); Edwin Duban Torres (Universidad de los Andes)</li>
+		<li>Fast Calorimeter Simulation with Wasserstein Generative Adversarial Networks	Vitoria Barin Pacela (University of Helsinki)*; Maurizio Pierini (Cern)</li>
+		<li>Finding Evidence Of The Sexual Predators Behavior	Ángeles López-Flores (Universidad Autónoma Metropolitana); Esaú Villatoro-Tello (Universidad Autonoma Metropolitana)*; Gabriela Ramirez-de-la-Rosa (Universidad Autónoma Metropolitana)</li>
+		<li>Learning Reward Machines for Partially Observable Reinforcement Learning (Abridged Report)	Rodrigo A Toro Icarte (University of Toronto and Vector Institute)*; Ethan Waldie (University of Toronto); Toryn Klassen (University of Toronto); Richard Valenzano (Element AI); Margarita Castro (University of Toronto); Sheila A. McIlraith (University of Toronto)</li>
+		<li>Augmented Curiosity: Depth and Optical Flow Prediction for Efficient Exploration	Juan A Carvajal (Purdue University)*; thomas molnar (purdue); Lukasz Burzawa (Purdue); Eugenio Culurciello (Nil)</li>
+		<li>Revisiting Syllable-aware Language Modelling	Arturo Oncevay (University of Edinburgh)*; Kervy Rivas Rojas (PUCP)</li>
+		<li>Speeding up Reinforcement Learning for Inference and Control of Gene Regulatory Networks	Rodrigo C Bonini (Universidade Federal do ABC)*; Felipe Leno da Silva (University of Sao Paulo); David C Martins-Jr (UFABC)</li>
+		<li>Anatomical Priors for Image Segmentation via Post-Processing with Denoising Autoencoders	Agostina Larrazabal (CONICET / Universidad Nacional del Litoral)*</li>
+		<li>A study of observation scales based on the FH dissimilarity measure	Edward Jorge Yuri Cayllahua Cahuina (San Pablo Catholic University)*</li>
+		<li>Exploiting the potential of deep reinforcement learning for classification tasks in high-dimensional and unstructured data	Johan Samir Obando Ceron (Universidad Autonoma de Occidente)*</li>
+		<li>Solving the generalized non-linear Schrödinger equations with genetic algorithms	Jesús Castillo Cabello (Tec de Monterrey)*</li>
+		<li>Segmentation of skin lesions and their attributes using Generative Adversarial Networks	Cristian Lazo Quispe (Universidad Nacional de Ingenieria)*</li>
+		<li>Divide and Conquer: an Accurate Machine Learning Algorithm to Process Split Videos on a Parallel Processing Infrastructure	Walter M Mayor (Univesity Autonoma de Occidente)*; Walter Mayor (universidad autonoma de occidente)</li>
+		<li>On The Selection of Predictive Models in Production	Rocio M Zorrilla (Laboratorio Nacional de Computacao Cientifica)*</li>
+		<li>Incorporating Climate Change in Spatiotemporal Species Distribution Models for cattle tick Rhipicephalus (Boophilus) microplus	Luz Astrid Pulido (Centro Agronomico Tropical de Investigacion y Ensenanza- CATIE); W. E. Grant (Department of Wildlife and Fisheries Sciences, Texas A&M University, College Station); Agustin Rudas (Instituto de Ciencias Naturales, Universidad Nacional de Colombia); J. A. Betancourt (Corporacion Colombiana de Investigacion Agropecuaria); Diana M Diaz Herrera (Wayne State University)*</li>
+		<li>Understanding Algorithmic Fairness in Health Care: A Proposed Case Study with Three Datasets	Bruna Silva (Universidade Federal de Minas Gerais)*; Flavio Figueiredo (UFMG)</li>
+		<li>Building Bridges: Implementing Redundancy Analysis by means of a Neural Network	Fernando J Yanez (Universidad Metropolitana)*; Juan Trabucco (Universidad Metropolitana); Alejandro Medina (Universidad Metropolitana)</li>
+		<li>Paraphrase Generation via Adversarial Penalizations	Gerson Waldyr Vizcarra Aguilar (San Pablo Catholic University)*</li>
+		<li>Overview of UP-Fall Detection Project	Lourdes Martinez-Villaseñor (Universidad Panamericana)*; Hiram Ponce (Universidad Panamericana); José Pablo Nuñez-Martínez (Universidad Panamericana); Ernesto Moya (Universidad Panamericana); Jorge E Brieva (Universidad Panamericana, Mexico)</li>
+		<li>Representation Learning in Game Provenance Graphs	Sidney Araujo Melo (Institute of Computing / Universidade Federal Fluminense)*; Aline Paes (Institute of Computing / Universidade Federal Fluminense)</li>
+		<li>Object Recognition using a Region Detector Based on Hierarchies of Partitions	Karla C Otiniano-Rodríguez (Esiee Paris (Paris-Est))*</li>
+		<li>Multi-Task Deep Learning Model for Improved Histopathology Prediction from In-Vivo Microscopy Images	David Brenes (Rice University)*; CJ Barberan (Rice University); Brady Hunt (Rice Unviersity); Richard Baraniuk (Rice University); Rebecca Richards-Kortum (Rice University)</li>
+		<li>Gaussian Processes for simulating complex quantum systems	Rodrigo A. Vargas-Hernandez (Chemical Physics Theory Group, Department of Chemistry, University of Toronto, Toronto, Ontario, M5S 3H6, Canada)*; Roman Krems (Department of Chemistry, University of British Columbia)</li>
+		<li>Anomaly event detection based on people trajectories for surveillance videos	Rensso V. H. Mora Colque (UFMG)*; Victor Hugo C. de Melo (Federal University of Minas Gerais); Guillermo Camara-Chavez (UFOP); William R Schwartz (Federal University of Minas Gerais)</li>
+		<li>Pain Intensity Estimation using Spatiotemporal Facial Features	Manasses A. Mauricio (Universidad Católica San Pablo)*; Guillermo Cámara (Universidade Federal de Ouro Preto)
+		<li>Investigating Transfer Learning Approaches for Mining Opinions in the Electoral Domain	Jessica Soares dos Santos (Universidade Federal Fluminense)*; Aline Paes (Institute of Computing / Universidade Federal Fluminense); Flávia Bernardini (UFF)</li>
+		<li>Application of Bayesian Techniques to Multiomic Longitudinal Data	Daniel Ruiz-Perez (Florida International University)*; Jose Lugo-Martinez (Carnegie Mellon University); Natalia Bourguignon (Florida International University); Kalai Mathee (Florida International University); Bhansali Shekhar (Florida International University); Ziv Bar-Joseph (); Giri Narasimhan (Florida International University)</li>
+		<li>Memory Networks Encode Knowledge Bases to Generate More Fluent Dialogue Responses	Omar U Florez (Capital One)*</li>
+		<li>Semantic Segmentation on Image Using Multi-task Hourglass Networks	Darwin D Saire Pilco (University of Campinas)*; Adín Ramírez Rivera (University of Campinas)</li>
+		<li>Biometric system based on electroencephalogram analysis	Dustin Javier Carrion (Yachay Tech University)*; Hector Mejia (Yachay Tech); Rigoberto Fonseca (Yachay Tech)</li>
+		<li>Crime prediction using self-exciting point processes and image features as covariates	Mateo Dulce (Quantil)*</li>
+		<li>Mapping the loss of information of Bosonic (Physical) systems into neural networks with applications in Machine learning	Ivan D Arraut Guerrero (The Open University of Hong Kong)*</li>
+		<li>Learning to Play Soccer by Reinforcement and Applying Sim-to-Real to Compete in the Real World	Hansenclever F Bassani (Universidade Federal de Pernambuco)*; Renie Delgado (Universidade Federal de Pernambuco); José Lima Júnior (Universidade Federal de Pernambuco); Heitor Rapela Medeiros (UFPE); Pedro H. M. Braga (Universidade Federal de Pernambuco); Alain Tapp (Université de Montréal)</li>
+		<li>Role of gut microbiota and their temporal interactions in kidney transplant recipients	Daniel Ruiz-Perez (Florida International University)*; Musfiqur Sazal (FIU); Ji In Park (Kangwon National University School of Medicine); Trevor F Cickovski (FIU); Hajeong Lee (Seoul National University Hospital); Hyunjeong Cho (Chungbuk National University Hospital); Duck Jin Hwang (HanGil Eye Hospital); Giri Narasimhan (Bioinformatics Research Group, Florida International University)</li>
+		<li>Expressiveness of Neural Processes	Alfredo A De la Fuente (Schlumberger Software Technology Innovation Center )*</li>
+		<li>Which Kernels to Transfer in Deep Q-Networks?	Jesús García-Ramírez (INAOE)*; Eduardo F Morales (Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE)); Hugo Jair Escalante (INAOE)</li>
+		<li>Large Scale Learning Techniques For Least Squares Support Vector Machines	Santiago Toledo-Cortés (Universidad Nacional de Colombia)*; Ivan Y. Castellanos-Martínez (Universidad Nacional de Colombia); Fabio A. Gonzalez (Universidad Nacional de Colombia, Colombia)</li>
+		<li>EXP4-DFDC: A Non-Stochastic Multi-Armed Bandit for Cache Replacement	Camilo Valdes (FIU); Farzana Beente Yusuf (Florida International University); Vitalii Stebliankin (FIU); Giri Narasimhan (Bioinformatics Research Group, Florida International University)*; Giuseppe Vietri (University of Minnesota)</li>
+		<li>Model car architecture for education in Robotics and Deep Neural Networks	Ricardo Carrillo Mendoza (FU Berlin)*</li>
+		<li>Towards Learning Better Representations for Completion of Real-World Knowledge Bases	Vítor Lourenço (Universidade Federal Fluminense)*; Aline Paes (Institute of Computing / Universidade Federal Fluminense); Marcio Moreno (IBM Research)</li>
+		<li>Backpropagating the Unsupervised Error of Self-Organizing Maps to Deep Neural Networks	Pedro H. M. Braga (Universidade Federal de Pernambuco)*; Heitor Rapela Medeiros (UFPE); Hansenclever F Bassani (Universidade Federal de Pernambuco)</li>
+		<li>Portable system for the prediction of anemia based on the ocular conjunctiva using Artificial Intelligence	Dennis H Núñez Fernández (Universidad Peruana Cayetano Heredia)*</li>
+		<li>See and Read: Detecting Depression Symptoms in Higher Education Students Using Multimodal Social Media Data	Paulo Mann (Institute of Computing / Universidade Federal Fluminense)*; Aline Paes (Institute of Computing / Universidade Federal Fluminense)</li>
+		<li>Optimizing the regularization parameters selection in sparse modeling	Victoria Peterson (Instituto de Matemática Aplicada del Litoral)*; Ruben Spies (Instituto de Matemática Aplicada del Litoral, IMAL-UNL-CONICET, Santa Fe, Argentina)</li>
+		<li>An end-to-end approach for the verification problem through learned metric-like spaces	Joao B Monteiro (Institut National de la Recherche Scientifique)*; Isabela Albuquerque (Institut National de la Recherche Scientifique); Jahangir Alam (Ph.D. (Postdoctoral Researcher, Speech Recognition), Centre de recherche informatique de Montréal Montréal, Canada); Tiago H Falk (INRS-EMT)</li>
+		<li>Adversarial target-invariant representation learning	Isabela Albuquerque (Institut National de la Recherche Scientifique)*; Joao B Monteiro (Institut National de la Recherche Scientifique); Ioannis Mitliagkas (Mila & University of Montreal); Tiago H Falk (INRS-EMT)</li>
+		<li>Signed Causal Bayesian Networks for Microbiomes	Musfiqur Sazal (FIU)*; Daniel Ruiz-Perez (Florida International University); Camilo Valdes (FIU); Trevor F Cickovski (FIU); Vitalii Stebliankin (FIU); Arpit F Mehta (FIU); Kalai Mathee (FIU); Giri Narasimhan (Bioinformatics Research Group, Florida International University)</li>
+		<li>On the Impact of Gender Bias in Medical Imaging Classifiers for Computer-aided Diagnosis	Nicolás Nieto ( Research institute for signals, systems and computational inteligence )*; Agostina Larrazabal (CONICET / Universidad Nacional del Litoral); Victoria Peterson (Instituto de Matemática Aplicada del Litoral); Diego Milone (CONICET / Universidad Nacional del Litoral); Enzo Ferrante (CONICET / Universidad Nacional del Litoral)</li>
+		<li>Meta-learning for skin cancer detection using Deep Learning techniques	Sara I Garcia (University Coventry)*</li>
+		<li>An Evaluation Benchmark for Online Discussion Representation Models	Túlio Corrêa Loures (Universidade Federal de Minas Gerais)*</li>
+		<li>A Deep Learning Model for Motor Imagery Classification	Paul Augusto Bustios Belizario (University of Sao Paulo)*; João Luís Garcia Rosa (University of São Paulo, Brazil)
+		<li>User-Centered Feature Space Transformation	Marleny Hilasaca (University of Sao Paulo)*</li>
+		<li>Meta-Webly Supervised Learning for object recognition	Ricardo Benitez-Jimenez ( Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE))*; Eduardo F Morales (Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE)); Hugo Jair Escalante (INAOE)</li>
+		<li>Relation Augmentation: A Gradient Boosting Approach for Detecting Genomic Anomalies	Mario Banuelos (Fresno State); Omar DeGuchy (University of California, Merced)*</li>
+		<li>Robust Estimation in Reproducing Kernel Hilbert	Joseph A Gallego (National University Of Colombia)*; Fabio A. Gonzalez (Universidad Nacional de Colombia, Colombia)</li>
+		Deep Predictive Coding for Multimodal Spatiotemporal Representation Learning	Marcio Fonseca (Câmara dos Deputados)*</li>
+		<li>Algorithmic Targeting of Social Policies: Accuracy & Fairness	Luis Fernando Cantu (ITAM)*; Alejandro Noriega Campero (MIT); Bernardo Garcia-Bulle Bueno (MIT); Michiel A Bakker (MIT); Luis Tejerina (IADB); Alex `Sandy' Pentland (MIT)</li>
+		<li>Efficient allocation of law enforcement resources using predictive police patrolling	Paula Rodriguez (Quantil)*</li>
+		<li>Seq2Seq Neural Architecture for Recommending Short Text Conversations	Johnny Torres (ESPOL University)*</li>
+		<li>Interpolation and Prediction of PM2.5 based on Conditional Generative Adversarial Network and a forecasting model	Luis E Colchado (Universidad Católica San Pablo )*</li>
+		<li>Involving humans to learn attributes	Nils Murrugarra-Llerena (University of Pittsburgh)*; Adriana Kovashka (University of Pittsburgh)</li>
+		<li>Hyperbolic Generative Adversarial Network, HGAN	Nicolas Ignacio Fredes (Universidad Tecnica Federico Santa Maria)*; Diego Lazcano (Universidad Tecnica Federico Santa Maria); Werner Creixell (Universidad Tecnica Federico Santa Maria)</li>
+		<li>Ambient Lighting Generation for Flash Images with Conditional Adversarial Networks	José Chávez (UCSP)*</li>
+		<li>Transfer Learning for Algorithm Recommendation	Gean T Pereira (University of São Paulo)*; Moisés Santos (University of São Paulo); Edesio Alcobaça (University of São Paulo); Rafael Gomes Mantovani (Federal Technology University of Paraná); Andre Carvalho (USP, Brazil)</li>
+		<li>Reinforcement Learning Approach to Fly Quadcopters with a Faulted Rotor	Erick D Tornero (UCSP)*</li>
+		<li>A genetic algorithm implementation for spatio-temporal variogram modelling to determine air quality monitoring network representativeness	Karol Baca-Lopez (Autonomous University of the State of Mexico)*; <li>Cristobal Fresno (National Institute of Genomic Medicine)</li>
+		<li>Global Model Explanation for Time Series	Xochitl Watts (Stanford University Alumni)*</li>
+		<li>Does a dog desire cake? - Expanding Knowledge Base Assertions Through Deep Relationship Discovery	Pedro A Colon-Hernandez (MIT Media Lab)*</li>
+		<li>Mental lexicon for personality identification in texts	Gabriela Ramirez-de-la-Rosa (Universidad Autónoma Metropolitana)*; Esau Villatoro-Tello (Universidad Autónoma Metropolitana); Hector Jimenez-Salazar (Universidad Autónoma Metropolitana)</li>
+		<li>Generation of time response of linear and nonlinear dynamic systems using autoencoders	Jose Paniagua (Universidad Autonoma de Occidente)*; Jesús Alfonso López Sotelo (Universidad Autónoma de Occidente)</li>
+		<li>Low Shot Learning with Untrained Neural Networks for Imaging Inverse Problems	Oscar F Leong (Rice University)*; Wesam Sakla (LLNL)</li>
+		<li>Aggressive Language Identification in Social Media using Deep Learning	Errol Wilderd Wilderd Mamani Condori (RICS (Research and Innovation Center in Computer Science) UCSP)*</li>
+		<li>Understanding Safety Based on Urban Perception	Felipe A. Moreno-Vera (Universidad Catolica San Pablo)*</li>
+		<li>Automatically Personalized Pain Intensity Estimation from Facial Expressions using CNN-RNN and HCRF in videos.	Jefferson J Quispe Pinares (Universidad Católica SanPablo)*; Guillermo Camara-Chavez (UFOP)</li>
+		<li>Skin Cancer Analysis using Deep Learning	Gabriel Jimenez (PaPaMED)*</li>
+		<li>A novel stochastic model based on echo state networks for hydrological time series forecasting	Edson Luque (USP)*</li>
+		<li>Towards Identifying for Evidence of Drain Brain from Web Search Results using Reinforcement Learning	Hector Murrieta (University of Copenhagen); Ivan Vladimir Meza Ruiz (Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas, Universidad Nacional Autónoma de México)*; Pegah Alizadeh (The Leonard de Vinci Engineering School); Jorge Garcia (Laboratoire d'Informatique de Paris Nord (LIPN) à l'Université Paris 13.)</li>
+		<li>Generative Adversarial Networks for Image Synthesis and Semantic Segmentation in Brain Stroke Images	Israel Nazareth Chaparro Cruz (Universidad Católica San Pablo)*</li>
+		<li>Auto-Rotating Perceptrons	Daniel Alcides Saromo Mori (PUCP)*; Elizabeth Villota Cerna (PUCP); Edwin Villanueva Talavera (Pontificia Universidad Católica del Perú)</li>
+		<li>On the Unintended Social Bias of Training Language Generation Models with Latin American Newspapers	Omar U Florez (Capital One)*</li>
+		<li>Dynamic Sparse Neural Networks	Lucas Oliveira Souza (Numenta)*; Michaelangelo Caporale (Numenta); Subutai Ahmad (Numenta)</li>
+		<li>A Machine Learning Approach For Blood Vessels Segmentation In Chorioallantoic Membrane Images	Leandro Ticlia de la Cruz (IO-USP)*; Ligia Gomes (FCF-USP)</li>
+		<li>A Machine Learning approach to Neural Information Decoding of Spike Train Distances in the Peripheral Nervous System	Oralia Nolasco-Jauregui (Tecana American University)*; Juan A Vega-Fernandez (Independent)</li>
+		<li>Feature Selection Algorithm Recommendation for Gene Expression data with Meta Learning	Robert A Aduviri (Pontifical Catholic University of Peru)*; Edwin Villanueva Talavera (Pontificia Universidad Católica del Perú)</li>
+		<li>Using a self-supervised encoder for anticipating failures in industrial equipment	Daniel Buades Marcos (Polytechnique Montréal)*</li>
+	<!-- <li><a href='#'></a></li> -->
+        </ul>
+    </div>
+</section>
+
