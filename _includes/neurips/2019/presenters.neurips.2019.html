@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="grid">
-        {% assign featuredItems = site.tags.oral | sort: "featuredOrder" %} 
+        {% assign featuredItems = site.tags.oral-neurips2019 | sort: "featuredOrder" %} 
         {% for post in featuredItems %}
             <div class="cell speakers-item">
                 <a href="{{post.website}}" target="_blank" class="speakers-link">
@@ -18,7 +18,7 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="/assets/img/NIPS/Speakers/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
+                    <img src="/assets/img/NIPS/2019/Speakers/{{ post.img }}" class="responsive-image img-centered desaturate" alt="">
                 </a>
                 <div class="speakers-caption">
                     <h4>{{ post.name }}</h4>
@@ -37,8 +37,8 @@
                 <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>
-        <ul><li>
-         	 <li>Abraham sanchez	"Deep learning models for diabetic retinophaty screening program" (Gobierno de Jalisco )</li>
+        <ul>
+         	<li>Abraham sanchez	"Deep learning models for diabetic retinophaty screening program" (Gobierno de Jalisco )</li>
 		<li>Adilson L Khouri	"An ontology and frequency-based approach, with machine learning, to recommend activities in scientific workflows" (USP)</li>
 		<li>Agostina Larrazabal	"Anatomical Priors for Image Segmentation via Post-Processing with Denoising Autoencoders" (Universidad Nacional del Litoral)</li>
 		<li>Alfredo A De La Fuente	"Expressiveness of Neural Processes" (Schlumberger software Technology innovation Center)</li>
