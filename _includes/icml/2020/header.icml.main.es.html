@@ -1,0 +1,47 @@
+<div class="workshop-header" id="workshopHeader">
+  <a href="/" class="logo"><img src="./assets/img/logo/LXAI-navlogo.png"></a>
+  <div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+    <span></span>
+    <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="workshop-header-right">
+    <a class="active" href="#workshop-intro">Introducción</a>
+<!--    <a href="https://translate.google.com/translate?sl=en&tl=es&u=https%3A%2F%2Flxai-icml2019.eventbrite.com%2F">Registro</a> -->
+    <!-- <a href="#workshop-main">Aplicaciones</a> -->
+    <!-- <a href="#icmlProgram">Programa</a> -->
+    <a href="#workshopSponsors">Patrocinadores</a>
+    <a href="#workshop-org">Organizadores</a>
+<!--    <a href="/icml-2019-presenters-es">Ponentes</a>-->
+    <a href="#workshopVolunteer">Voluntarios</a> 
+    <a href="#workshopLogistics">Logística</a> 
+    <a href="#contact">Contacto</a>
+    <div class="dropdown" id='language'>
+      <a class="dropbtn">Idioma</a>
+        <div class="dropdown-content">
+          <a href="/icml-2020">English</a>
+          <a href="/icml-2020-es">Español</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("workshopHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
