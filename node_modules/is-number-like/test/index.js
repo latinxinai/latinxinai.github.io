@@ -1,8 +1,8 @@
 'use strict'
-var test = require('tape')
-var isNumberLike = require('..')
+const test = require('tape')
+const isNumberLike = require('..')
 
-var testCases = [
+const testCases = [
 // ['number', expectedResult]
   [0, true],
   ['0', true],

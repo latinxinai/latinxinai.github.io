@@ -111,19 +111,23 @@
         },
         Property: function(M) {
             var key = M.key;
+            var name = key.type == "Identifier" ? key.name : key.value;
             var args = {
                 start    : my_start_token(key),
                 end      : my_end_token(M.value),
-                key      : key.type == "Identifier" ? key.name : key.value,
+                key      : name,
                 value    : from_moz(M.value)
             };
-            if (M.kind == "init") return new AST_ObjectKeyVal(args);
-            args.key = new AST_SymbolAccessor({
-                name: args.key
-            });
-            args.value = new AST_Accessor(args.value);
-            if (M.kind == "get") return new AST_ObjectGetter(args);
-            if (M.kind == "set") return new AST_ObjectSetter(args);
+            switch (M.kind) {
+              case "init":
+                return new AST_ObjectKeyVal(args);
+              case "set":
+                args.value.name = from_moz(key);
+                return new AST_ObjectSetter(args);
+              case "get":
+                args.value.name = from_moz(key);
+                return new AST_ObjectGetter(args);
+            }
         },
         ArrayExpression: function(M) {
             return new AST_Array({
@@ -252,7 +256,10 @@
     map("CallExpression", AST_Call, "callee>expression, arguments@args");
 
     def_to_moz(AST_Toplevel, function To_Moz_Program(M) {
-        return to_moz_scope("Program", M);
+        return {
+            type: "Program",
+            body: M.body.map(to_moz)
+        };
     });
 
     def_to_moz(AST_Defun, function To_Moz_FunctionDeclaration(M) {
@@ -260,7 +267,7 @@
             type: "FunctionDeclaration",
             id: to_moz(M.name),
             params: M.argnames.map(to_moz),
-            body: to_moz_scope("BlockStatement", M)
+            body: to_moz_block(M)
         }
     });
 
@@ -269,7 +276,7 @@
             type: "FunctionExpression",
             id: to_moz(M.name),
             params: M.argnames.map(to_moz),
-            body: to_moz_scope("BlockStatement", M)
+            body: to_moz_block(M)
         }
     });
 
@@ -375,10 +382,11 @@
     });
 
     def_to_moz(AST_ObjectProperty, function To_Moz_Property(M) {
-        var key = {
-            type: "Literal",
-            value: M.key instanceof AST_SymbolAccessor ? M.key.name : M.key
-        };
+        var key = (
+            is_identifier(M.key)
+            ? {type: "Identifier", name: M.key}
+            : {type: "Literal", value: M.key}
+        );
         var kind;
         if (M instanceof AST_ObjectKeyVal) {
             kind = "init";
@@ -539,8 +547,8 @@
         moz_to_me = new Function("U2", "my_start_token", "my_end_token", "from_moz", "return(" + moz_to_me + ")")(
             exports, my_start_token, my_end_token, from_moz
         );
-        me_to_moz = new Function("to_moz", "to_moz_block", "to_moz_scope", "return(" + me_to_moz + ")")(
-            to_moz, to_moz_block, to_moz_scope
+        me_to_moz = new Function("to_moz", "to_moz_block", "return(" + me_to_moz + ")")(
+            to_moz, to_moz_block
         );
         MOZ_TO_ME[moztype] = moz_to_me;
         def_to_moz(mytype, me_to_moz);
@@ -598,14 +606,4 @@
         };
     };
 
-    function to_moz_scope(type, node) {
-        var body = node.body.map(to_moz);
-        if (node.body[0] instanceof AST_SimpleStatement && node.body[0].body instanceof AST_String) {
-            body.unshift(to_moz(new AST_EmptyStatement(node.body[0])));
-        }
-        return {
-            type: type,
-            body: body
-        };
-    };
 })();
