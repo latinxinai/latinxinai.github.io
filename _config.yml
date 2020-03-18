@@ -22,5 +22,5 @@ include: ['_pages']
 
 exclude: ['package.json', 'src' , 'node_modules']
 
-plugins:
+plugins: []
   # - jekyll-redirect-from

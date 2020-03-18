@@ -267,13 +267,13 @@ div.sponsors-gallery img {
 details {
     width: 75%;
     min-height: 5px;
-    max-width: 700px;
-    padding: 45px 70px 45px 45px;
-    margin: 0 auto;
+    max-width: 450px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto;
     position: relative;
     font-size: 22px;
     border: 1px solid rgba(0,0,0,.1);
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
     transition: all .3s;
   }
