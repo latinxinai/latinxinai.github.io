@@ -124,3 +124,4 @@ This site has been modified by and built upon by the these folks
 - [Pablo Rivas](https://github.com/pablorp80)
 - [Maria Pantoja](https://github.com/mpantoja314)
 - [Juan Camilo](https://github.com/juancamilog)
+- [Kevin Bello](https://github.com/kevinsbello)
