@@ -706,4 +706,63 @@ aside.clients,
     display: block;
   }
 
-  
+
+
+/*// Basic Button Style*/
+ .btn_icml20-blue {
+     /*box-sizing: border-box;*/
+     appearance: none;
+     background-color: transparent;
+     border-radius: 0.6em;
+     cursor: pointer;
+     display: inline-flex;
+     align-self: center;
+     font-size: 1rem;
+     line-height: 1;
+     margin: 5px;
+     padding: 1.2em 2.8em;
+     text-decoration: none;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 700;                      
+
+     border-color: #3498db;
+     color: #fff;
+     box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+     transition: all 150ms ease-in-out;
+}
+
+.btn_icml20-blue:hover{
+    color: #3498db;
+    outline: 0;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.btn_icml20-green {
+  /*box-sizing: border-box;*/
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: inline-flex;
+  align-self: center;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 5px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  border-color: #2ecc71;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #2ecc71 inset, 0 0 0 0 #2ecc71;
+  transition: all 150ms ease-in-out;
+}
+
+.btn_icml20-green:hover{
+   color: #2ecc71;
+   outline: 0;
+   box-shadow: 0 0 10px 0 #2ecc71 inset, 0 0 10px 4px #2ecc71;
+}
