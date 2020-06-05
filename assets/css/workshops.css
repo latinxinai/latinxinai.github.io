@@ -519,7 +519,7 @@
 
 
 #speakers * {
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 @media(min-width:767px) {
