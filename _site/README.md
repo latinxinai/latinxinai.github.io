@@ -2,7 +2,7 @@
 
 ![](./assets/img/particle.jpg)
 
-This is an opensource website for the LatinX in AI Coalition. Our organization is volunteer run, so we welcome and encourage contributions from our community and allies! 
+This is an opensource website for LatinX in AI (LXAI). Our organization is volunteer run, so we welcome and encourage contributions from our community and allies! 
 
 Familiarize yourself with the following documentation before getting started.
 
@@ -95,7 +95,7 @@ Follow these **guidelines** when contributing to this site:
 - Push to your branch and then [create a pull request](https://help.github.com/articles/creating-a-pull-request/).
 - Follow standard [open-source style guides](http://google.github.io/styleguide/).
 - Correct any suggested edits from LXAI and resubmit your pull request for additional review.
-- Once your changes have been accepted and merged to master by a representative of the LatinX in AI Coalition, your name may be added to the credits below. 
+- Once your changes have been accepted and merged to master by a representative of the LatinX in AI (LXAI), your name may be added to the credits below. 
 
 
 ## Questions
