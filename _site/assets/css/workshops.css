@@ -139,7 +139,7 @@
 
 #workshop-main p{
     text-align:left;
-    padding: 5px 4em 0 4em;
+    /* padding: 5px 4em 0 4em; */
 }
 
 #workshop-main img{
@@ -180,11 +180,36 @@
   }
 }
 
+
+#call-workshop {
+  padding:0px;
+}
+
+#submit-workshop{
+  padding:0px;
+}
+
+#MentoringProgram{
+  padding:0px;
+}
+
+#workshopSponsors{
+  padding:0px;
+}
+
+#speakers div{
+  padding:0 0rem;
+}
+
 #call-workshop li{
   color:black;
   text-align: left;
   font-size: 18px;
 }
+
+/* #workshop-main img{
+  padding:0px;
+} */
 
 
 
