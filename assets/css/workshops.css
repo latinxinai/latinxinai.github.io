@@ -178,6 +178,10 @@
   .workshop-header-right {
     float: right;
   }
+
+  #workshop-main img{
+  padding:0px;
+  }
 }
 
 
@@ -207,9 +211,7 @@
   font-size: 18px;
 }
 
-/* #workshop-main img{
-  padding:0px;
-} */
+
 
 
 
