@@ -125,3 +125,6 @@ This site has been modified by and built upon by the these folks
 - [Maria Pantoja](https://github.com/mpantoja314)
 - [Juan Camilo](https://github.com/juancamilog)
 - [Kevin Bello](https://github.com/kevinsbello)
+- [Walter Mayor](https://github.com/waltermayor)
+- [Josue Ortega Caro](https://github.com/josueortc)
+- [Gissella Bejarano](https://github.com/gissemari)
