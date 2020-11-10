@@ -156,8 +156,29 @@
   padding-top: 102px;
 }
 
+
 #workshopProgram ul{
   list-style-type: none;
+}
+
+.workshopSchedule {
+  display: flex;
+  justify-content: center;
+}
+
+.workshopSchedule table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.workshopSchedule td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.workshopSchedule tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 .workshopSponsorGallery{
