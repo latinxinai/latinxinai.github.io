@@ -155,26 +155,26 @@
       <div class='icmlSponsorGallery'>
         <div class='sponsorList' id='platLevel'>
           <h3>Platinum</h3>
-            <a target="_blank" href="https://ai.google/"><img width=865
+            <a target="_blank" href="https://ai.google/"><img
             src="./assets/img/neurips/2020/sponsors/Platinum-Google.png"></a>
-            <a target="_blank" href="https://ai.facebook.com/"><img width=865
+            <a target="_blank" href="https://ai.facebook.com/"><img
             src="./assets/img/neurips/2020/sponsors/facebook-new.gif"></a>
         </div>
 
         <div class='sponsorList' id='silvLevel'>
           <h3>Silver</h3>
-          <a target="_blank" href="https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html"><img width=130
+          <a target="_blank" href="https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html"><img
             src="./assets/img/neurips/2020/sponsors/apple-logo.jpg"></a>
-          <a target="_blank" href="https://www.capitalone.com/tech/machine-learning/"><img width=130
+          <a target="_blank" href="https://www.capitalone.com/tech/machine-learning/"><img
             src="./assets/img/neurips/2020/sponsors/capital-one-logo@logotyp.us.svg"></a>
         </div>
 
         <div class='sponsorList' id='bronzLevel'>
           <h3>Bronze</h3>
           <br/>
-          <a target="_blank" href="https://www.salesforce.com/"><img width=80
+          <a target="_blank" href="https://www.salesforce.com/"><img
             src="./assets/img/neurips/2020/sponsors/Salesforce_Logo_RGB_1797c0_8_13_14.png"></a>
-            <a target="_blank" href="https://www.twosigma.com/"><img width=80
+            <a target="_blank" href="https://www.twosigma.com/"><img
               src="./assets/img/neurips/2020/sponsors/TwoSigma.png"></a>
         </div>
       </div>
@@ -206,7 +206,7 @@
                 <thead>
                 <tr>
                     <th class="tg-79vr"><span style="font-weight:bold;color:#FFF;background-color:#741B47">Time</span></th>
-                    <th class="tg-79vr" colspan="3"><span style="font-weight:bold;color:#FFF;background-color:#741B47">Event</span></th>
+                    <th class="tg-79vr" colspan="3"><span style="font-weight:bold;background-color:#741B47">Event</span></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -256,11 +256,11 @@
                 </tr>
                 <tr>
                     <td class="tg-h2tm"><span style="font-weight:normal;background-color:#D5A6BD">12:00 PM</span></td>
-                    <td class="tg-pfmh" colspan="3"><span style="font-weight:normal;color:#45494E;background-color:#EA9999">Lunch / Industry Panel</span></td>
+                    <td class="tg-pfmh" colspan="3"><span style="font-weight:normal;background-color:#EA9999">Lunch / Industry Panel</span></td>
                 </tr>
                 <tr>
                   <td class="tg-h2tm"><span style="font-weight:normal;background-color:#D5A6BD">12:30 PM</span></td>
-                  <td class="tg-mcmo" colspan="3"><span style="font-weight:normal;color:#45494E;background-color:#EA9999">Joint Poster Session</span></td>
+                  <td class="tg-mcmo" colspan="3"><span style="font-weight:normal;background-color:#EA9999">Joint Poster Session</span></td>
               </tr>
                 <tr>
                     <td class="tg-h2tm"><span style="font-weight:normal;background-color:#D5A6BD">02:30 PM</span></td>
@@ -305,14 +305,14 @@
 
                 </tbody>
             </table>
-        </div>
-        <a class="btn_icml20-blue" href="/neurips-2020-schedule">Detailed Schedule</a>
+        <!-- </div>
+        <a class="btn_icml20-blue" href="/neurips-2020-schedule">Detailed Schedule</a> -->
     </div>
 
 
 
-<!--    <br/><hr> -->
-    <!-- <section id="speakers" >
+    <br/><hr>
+    <section id="speakers" >
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -321,9 +321,9 @@
           </div>
         </div>
         <div class="grid">
-          {% assign featuredItems = site.tags.keynote-neurips2020  %}
+          {% assign featuredItems = site.tags.keynote-neurips2020  | sort: "featuredOrder" %}
           {% for post in featuredItems %}
-          <div class="cell speakers-item">  -->
+          <div class="cell speakers-item">
 
 <!--            <a href="{{post.website}}" target="_blank" class="speakers-link">-->
 <!--              <div class="speakers-hover">-->
@@ -336,22 +336,19 @@
 <!--            </a>-->
 
 
-<!--              <a href="{{post.website}}" target="_blank" >
+              <a href="{{post.website}}" target="_blank" >
                 <img src="/assets/img/neurips/2020/presenters/{{ post.img }}" class="responsive-image img-centered" alt="">
-              </a> -->
-
-
-
+              </a>
 
 <!--            <div class="speakers-caption">-->
 <!--              <h4>{{ post.name }}</h4>-->
 <!--              <p class="text-muted">{{ post.title }}</p>-->
 <!--            </div>-->
-<!--          </div>
+          </div>
           {% endfor %}
         </div>
       </div>
-    </section>-->
+    </section>
 
 
 
