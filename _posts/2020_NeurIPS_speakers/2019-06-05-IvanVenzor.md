@@ -2,7 +2,7 @@
 name: Iván Venzor
 title: Severe Weather Prediction Using Lightning Data
 modal-id: 1
-img: oral\Ivan Venzor.jpg
+img: oral\IvanVenzor.png
 alt: Picture of Iván Venzor
 topic: --
 bio: --
