@@ -2,7 +2,7 @@
 name: Matias Daniel Molina
 title: Neural language models for text classification in evidence-based medicine
 modal-id: 1
-img: oral\MatiasDaniel.png
+img: oral\MatiasMolina.jpeg
 alt: Picture of Matias Daniel Molina
 topic: Machine Learning
 bio: --

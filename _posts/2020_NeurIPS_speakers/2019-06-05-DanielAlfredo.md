@@ -2,7 +2,7 @@
 name: Daniel Alfredo Palomino Paucar
 title: Overcoming Transformer Fine-Tuning process to improve Twitter Sentiment Analysis for Spanish Dialects
 modal-id: 1
-img: oral\DanielAlfredo.png
+img: oral\DanielPalomino.jpeg
 alt: Picture of Daniel Alfredo Palomino Paucar
 topic: Natural Language Processing
 bio: --

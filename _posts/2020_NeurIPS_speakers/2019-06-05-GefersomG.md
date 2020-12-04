@@ -1,8 +1,8 @@
 ---
 name: Gefersom G Lima
-title: Binary Segmentation of Seismic Facies Using Encoder-Decoder Neural Networks
+title: Binary Segmentation of Seismic Facies Using Encoder Decoder Neural Networks
 modal-id: 1
-img: oral\GefersomG.png
+img: oral\GefersomLima.jpeg
 alt: Picture of Gefersom G Lima
 topic: Deep Learning
 bio: --

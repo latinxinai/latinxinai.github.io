@@ -1,8 +1,8 @@
 ---
 name: Mauricio Gonzalez-Soto
-title: 'Learning a causal structure: a Bayesian Random Graph approach'
+title: Learning a causal structure a Bayesian Random Graph approach
 modal-id: 1
-img: oral\MauricioGonzalez.png
+img: oral\MauricioGonzalez.jpeg
 alt: Picture of Andres Carvallo
 topic: Probabilistic Methods
 bio: --
