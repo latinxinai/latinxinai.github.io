@@ -1,6 +1,6 @@
 ---
 name: Lauren Pfeifer
-title: Unsupervised Difficulty Estimation
+title: Automatic Detection and Classification of Tick-borne Skin Lesions using Deep Learning
 modal-id: 1
 img: oral\LaurenPfeifer.png
 alt: Picture of Lauren Pfeifer
