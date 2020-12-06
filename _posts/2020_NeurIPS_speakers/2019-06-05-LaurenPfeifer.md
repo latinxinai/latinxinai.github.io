@@ -1,9 +1,9 @@
 ---
-name: Matias Valdenegro-Toro
+name: Lauren Pfeifer
 title: Unsupervised Difficulty Estimation
 modal-id: 1
 img: oral\MatiasValdenegro.png
-alt: Picture of Matias Valdenegro-Toro
+alt: Picture of Lauren Pfeifer
 topic: Deep Learning
 bio: --
 website:
