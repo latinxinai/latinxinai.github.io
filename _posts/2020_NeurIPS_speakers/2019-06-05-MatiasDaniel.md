@@ -1,6 +1,6 @@
 ---
 name: Matias Daniel Molina
-title: Neural language models for text classification in evidence-based medicine
+title: Performance Variability in Zero-Shot Classification
 modal-id: 1
 img: oral\MatiasMolina.jpeg
 alt: Picture of Matias Daniel Molina
