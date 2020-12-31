@@ -486,5 +486,12 @@ details {
   }
   
   
-  
- 
+  .danger {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    font-size: 20px;
+  }
